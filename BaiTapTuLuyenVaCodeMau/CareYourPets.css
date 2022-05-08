@@ -1,0 +1,117 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+    display: inline;
+}
+button{
+    padding: 17px 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    color: #ff3500;
+}
+button:hover{
+    background-color: #ff3500;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+/* CSS cho phần HEADER  */
+.header__top{
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+}
+.container{
+    padding-left: 130px;
+    padding-right: 130px;
+    
+}
+.header__contact{
+    float: left;
+}
+.header__contact a{
+    margin-right: 50px;
+    color: white;
+}
+.icon i{
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.icon{
+    float: right;
+}
+.header__main img{
+    float: left;
+}
+.header__main ul{
+    float: right;
+}
+.header__main li{
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.header__main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header__main a{
+    color: #102955;
+}
+.header a:hover{
+    color: rgb(246, 105, 4);
+}
+.header i:hover{
+    color: rgb(246, 105, 4);
+}
+/* CSS CHO CAROUSEL */
+.carousel {
+    background-image: url(./img/banner.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    float: left;
+    width: 40%;
+    color: white;
+    padding-top: 80px;
+    padding-left: 100px;
+}
+.image{
+    float: left;
+    width: 60%;
+    position: relative;
+}
+.text h1{
+    font-size: 78px;
+    font-weight: -400px;
+    line-height: 90px;
+    margin: 0;
+}
+.text h1 span{
+    font-weight: 900;
+    font-size: 80px;
+}
+}
+.text p{
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.dog img{
+    width: 100%;
+}
+.dog{
+    position: absolute;
+}

@@ -1,0 +1,31 @@
+p{
+    color: blue;
+    text-align: justify;
+    text-decoration: dotted;
+    text-indent: 10px;
+    word-spacing: 2px;
+    line-height: 40px;
+    font-weight: 900px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.class p{
+    margin: 50px;
+}
+.menu li{
+    list-style: none;
+    display: inline;
+    font-size: 30px;
+    margin: 20px;
+
+
+}
+.menu ul{
+    background-color: aquamarine;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.menu .bb{
+    color: red;
+}
