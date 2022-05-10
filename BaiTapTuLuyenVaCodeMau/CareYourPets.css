@@ -1,117 +1,156 @@
-/* GLOBAL */
+/* GLOBAL CSS */
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    
-}
-li{
-    list-style: none;
-    display: inline;
-}
-button{
-    padding: 17px 50px;
-    border-radius: 30px;
-    font-size: 16px;
-    border: 1px solid transparent;
-    color: #ff3500;
-}
-button:hover{
-    background-color: #ff3500;
-    color: white;
 }
 .clear{
     clear: both;
 }
-/* CSS cho phần HEADER  */
+
+/* HEADER CSS */
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.container a{
+    text-decoration: none;
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.tel,.menu img{
+    float: left;
+}
+.socialicon,.menu ul{
+    float: right;
+}
 .header__top{
     background-color: black;
-    color: white;
     padding: 15px 0;
-}
-.container{
-    padding-left: 130px;
-    padding-right: 130px;
-    
-}
-.header__contact{
-    float: left;
-}
-.header__contact a{
-    margin-right: 50px;
     color: white;
 }
-.icon i{
+.header__top a{
     color: white;
-    margin-left: 30px;
-    font-size: 20px;
 }
-.icon{
-    float: right;
+.header__top a:hover{
+    color: rgb(245, 105, 4);
+    cursor: pointer;
 }
-.header__main img{
-    float: left;
+.socialicon i{
+    margin-left: 20px;
 }
-.header__main ul{
-    float: right;
+.tel span{
+    margin-left: 50px;
 }
-.header__main li{
-    margin-left: 40px;
-    font-weight: bold;
-    font-size: 15px;
-}
-.header__main{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.header__main a{
+.menu a{
     color: #102955;
 }
-.header a:hover{
-    color: rgb(246, 105, 4);
+.menu{
+    padding: 30px 0;
+    margin-bottom: 30px;
 }
-.header i:hover{
-    color: rgb(246, 105, 4);
-}
-/* CSS CHO CAROUSEL */
-.carousel {
+
+/* CAROUSEL CSS */
+.carousel{
     background-image: url(./img/banner.png);
-    height: 600px;
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.text{
-    float: left;
-    width: 40%;
+    background-position: center bottom;
+    width: 100%;
+    height: 600px;
     color: white;
-    padding-top: 80px;
-    padding-left: 100px;
 }
-.image{
+.container__left,.container__right{
     float: left;
-    width: 60%;
+}
+.container__left{
+    width: 30%;
+    padding-top: 10%;
+}
+.container__right{
+    width: 70%;
     position: relative;
 }
-.text h1{
+.carousel h1{
     font-size: 78px;
-    font-weight: -400px;
-    line-height: 90px;
-    margin: 0;
+    font-weight: 200;
+    margin-bottom: 4px;
+    line-height: 85px;
 }
-.text h1 span{
-    font-weight: 900;
-    font-size: 80px;
+.carousel h1 span{
+    font-weight: 700;
 }
+.carousel p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 12px 0 50px;
 }
-.text p{
-    line-height: 30px;
-    margin-bottom: 50px;
+.btn{
+    padding: 17px 50px;
+    background-color: white;
+    color: #ff3500;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
-.dog img{
+button:hover{
+    color: white;
+    background-color: red;
+}
+.container__right img{
     width: 100%;
-}
-.dog{
     position: absolute;
+    bottom: -677px;
+}
+/* SERVICE CSS */
+.services{
+    margin-top: 200px;
+}
+.services__content{
+    margin-top: 70px;
+}
+.services__text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services__text h1{
+    font-size: 45px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.services__item{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.card_item{
+    border: 1px solid orange;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.bgimg{
+    padding: 50px;
+    position: relative;
+}
+.img{
+    padding: 20px;
+    position: absolute;
+    left: 99px;
+    top: 68px;
+}
+.item_text h3{
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.item_text p{
+    line-height: 30px;
+    padding: 0 10px 50px;
 }

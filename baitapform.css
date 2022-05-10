@@ -1,0 +1,33 @@
+html,body{
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 10px 60px;
+    border-radius: 20px;
+}
+.container .so{
+    background-color: rgb(11, 243, 158);
+    border-radius: 50%;
+    padding: 6px 12px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+}
+.container h1{
+    text-align: center;
+    padding: 5px;
+}
+.container .text{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+}
+.info input{
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 0;
+}
