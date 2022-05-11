@@ -154,3 +154,95 @@ button:hover{
     line-height: 30px;
     padding: 0 10px 50px;
 }
+/* CSS cho phần CAT  */
+.cat{
+    margin-top: 50px;
+}
+.cat__left,.cat__right{
+    float: left;
+    width: 50%;
+}
+.cat__right h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: #191d34;
+}
+.cat__right h1 span{
+    font-weight: 900;
+}
+.cat__right p{
+    margin-top: 30px;
+    line-height: 28px;
+    font-size: 18px;
+    color: #66666f;
+    margin-bottom: 45px;
+}
+.btn1{
+    background-color: #ff3500;
+    border-radius: 30px;
+    border: 1px solid #ff3500;
+    color: white;
+    padding: 17px 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn1:hover{
+    background-color: white;
+    color: #ff3500;
+}
+.cat__right{
+    padding: 115px 53px 0;
+}
+.cat__left img{
+    width: 80%;
+
+}
+/* CSS cho phần PET */
+.pet__left,.pet__right,.card_left,.card_right{
+    float: left;
+    width: 50%;
+}
+.pet__left h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: #191d34;
+}
+.pet__left h1 span{
+    font-weight: 900;
+}
+.pet__left p{
+    margin-top: 30px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #66666f;
+    margin-bottom: 45px;
+}
+.pet__left{
+    padding-right: 30px;
+    padding-top: 150px;
+}
+.chomeo{
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 0;
+}
+.chomeo h3{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.chomeo p{
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+}
+.card_left,.card_right{
+    padding: 15px;
+}
+.card_right .chomeo:first-child{
+    margin-bottom: 40px;
+}
+.card_left{
+    padding: 171px 15px;
+}
