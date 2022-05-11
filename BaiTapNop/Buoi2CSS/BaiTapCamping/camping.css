@@ -1,0 +1,147 @@
+/* GLOBAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #faf4f2;
+}
+.clear{
+    clear: both;
+}
+/* HEADER CSS */
+.header{
+    padding: 15px 80px;
+    background-color: #f8e1db;
+}
+.header li{
+    display: inline;
+    margin-right: 50px;
+}
+.header a{
+    text-decoration: none;
+    color: #6f6663;
+    font-weight: 600;
+    font-size: 16px;
+}
+.header img{
+    margin-bottom: 15px;
+}
+
+/* CAROUSEL CSS */
+.carousel{
+    background-image: url(./img/BG.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ACTIVITIES CSS */
+.activities{
+    text-align: center;
+    margin-top: 65px;
+}
+.activities__top h2{
+    color: #797878;
+    font-size: 28px;
+    margin-top: 7px;
+}
+.activities__top {
+    margin-bottom: 15px;
+}
+.activities__item{
+    padding: 15px;
+    float: left;
+    width: 25%;
+}
+.item__card{
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+}
+.card_img img{
+    border-radius: 20px;
+}
+.card_img{
+    position: relative;
+    margin-bottom: 20px;
+}
+.card_img i{
+    position: absolute;
+    left: 211px;
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.801);
+    color: #e76f51;
+    z-index: ;
+    cursor: pointer;
+}
+.card_text p{
+    line-height: 30px;
+    margin: 20px 0;
+    padding: 0 10px;
+    color: #969696;
+}
+.btn{
+  padding: 7px 35px;  
+  border-radius: 20px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover{
+    background-color: #f14b21;
+}
+.activities__end .btn{
+    border: 1px solid tomato;
+    color: #f14b21;
+    padding: 7px 50px;
+    margin-top: 15px;
+}
+.activities__end .btn:hover{
+    color: white;
+}
+
+/* BANNER CSS */
+.banner{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #f8e1db;
+    border-radius: 20px;
+}
+.banner__left,.banner__right,.content__app,.content__social{
+    float: left;
+    width: 50%;
+}
+.banner__left{
+    background-image: url(./img/mask.png);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 15px 70px;
+}
+.banner__right{
+    padding: 70px 70px;
+    color: #81807f;
+}
+.banner__title{
+    margin-bottom: 20px;
+}
+
+.content__app h3,.content__social h3,.banner__title h1{
+    margin-bottom: 15px;
+}
+.content__social i{
+    color: #e76f51;
+    padding-right: 5px;
+}
+.banner__content a:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
