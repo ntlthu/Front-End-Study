@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện nghe tiếng Nhật</title>
+    <link rel="stylesheet" href="./ITgyoumuhen.css">
+</head>
+
+<body>
+    <h1>仕事の日本語ーIT業務編</h1>
+    
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'track1')">Track 1</button>
+        <button class="tablinks" onclick="openCity(event, 'track2')">Track 2</button>
+        <button class="tablinks" onclick="openCity(event, 'track3')">Track 3</button>
+    </div>
+
+    <div id="track1" class="tabcontent">
+        <audio class="audio" controls loop src="./1_ITGyoumuhen/[studyjapanese.net]_Shigoto_no_nihongo_IT_Gyoumuhen-AudioCD/01 Track 1.mp3">Track 1</audio>
+        <p>
+            夢の世界へようこそ！　アルクテクノロジー社は<span title="あきはばら (tên địa danh)">秋葉原</span>に本社があり、シリコンバレーにも支社のあるロボット<span title="かいはつ">開発</span>企業です。日本とアメリカで活躍するエンジニアたちは合計3,500人！　あなたもここで未来を作る仲間に入りませんか。私たちは、夢のある若い技術者たちを応援しています。あなたに熱い夢があるから、ぜひ、当社へ！「ロボットとともに明るい未来を」。アルクテクノロジー。
+        </p>
+        <table>
+            <tr>
+                <th>Từ Vựng</th>
+                <th>Hán Tự</th>
+                <th>Cách Đọc</th>
+                <th>Nghĩa</th>
+            </tr>
+            <tr class="rowchan">
+                <td>夢</td>
+                <td>MỘNG</td>
+                <td>ゆめ</td>
+                <td>Giấc mơ; ước mơ</td>
+            </tr>
+            <tr class="rowle">
+                <td>秋葉原</td>
+                <td>THU DIỆP NGUYÊN</td>
+                <td>あきはばら</td>
+                <td>Akihabara, khu mua sắm điện tử ở Tokyo</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="track2" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="track3" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
