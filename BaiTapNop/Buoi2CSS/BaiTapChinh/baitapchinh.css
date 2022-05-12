@@ -6,8 +6,31 @@
 }
 .container{
     max-width: 1170px;
+    margin: auto;
 }
 /* HEADER CSS */
+.header{
+    padding: 20px 0;
+}
 .header__content h2,.header__content li{
     display: inline;
+}
+.header__content a{
+    text-decoration: none;
+}
+.header__content i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #002045;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    color: #f9cd00;
+}
+
+.header__content h2 a{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #191b30;
 }
