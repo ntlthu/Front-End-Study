@@ -127,10 +127,10 @@ html,body{
     height: auto;
     background-size: cover;
     background-position: center;
-    padding: 15px 70px;
+    padding: 15px 50px;
 }
 .banner__right{
-    padding: 70px 70px;
+    padding: 70px 50px;
     color: #81807f;
 }
 .banner__title{
