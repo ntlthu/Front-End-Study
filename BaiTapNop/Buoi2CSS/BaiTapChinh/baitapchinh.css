@@ -1,0 +1,13 @@
+/* GLOBAL CSS  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+}
+/* HEADER CSS */
+.header__content h2,.header__content li{
+    display: inline;
+}
