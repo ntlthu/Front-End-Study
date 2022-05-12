@@ -1,31 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background-color: #fff;
+/* Tab Links */
+.tabs{
+    display:flex;
+  }
+  .tablinks {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight:600;
+    transition: 0.2s ease;
+  }
+  .tablinks:hover{
+    background:blue;
+    color:#fff;
+  }
+  /* Tab active */
+  .tablinks.active {
+     background:blue;
+    color:#fff;
+  }
+  
+  /* tab content */
+  .tabcontent {
+    display: none;
+  }
+  /* Text*/
+  .tabcontent p {
+    color: #333;
     font-size: 16px;
-}
-
-.services__item{
-    float: left;
-    width: 33.33%;
-    padding: 20px;
-}
-
-.services__img{
-    background-image: url(./img/service_icon_bg_1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 160px;
-    height: 160px;
-    position: relative;
-}
-img{
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
+  }
+  /* tab content active */
+  .tabcontent.active {
+    display: block;
+  }
