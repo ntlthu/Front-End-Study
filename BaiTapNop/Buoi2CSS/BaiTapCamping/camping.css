@@ -25,6 +25,9 @@ html,body{
     font-weight: 600;
     font-size: 16px;
 }
+.header a:hover{
+    color: #e76f51;
+}
 .header img{
     margin-bottom: 15px;
 }
@@ -144,4 +147,46 @@ html,body{
 .banner__content a:hover{
     cursor: pointer;
     background-color: aquamarine;
+}
+
+/* FOOTER CSS */
+.footer{
+    color: #474644;
+    background-color: #F8E1DB;
+    border-radius: 80px 80px 0 0;
+}
+.footer h4{
+    margin-bottom: 20px;
+}
+.footer__left,.footer__right,.right__item{
+    float: left;
+}
+.footer__left{
+    width: 40%;
+    padding: 100px 55px;
+}
+.footer__left p{
+    line-height: 27px;
+}
+.footer__right{
+    width: 60%;
+    padding: 100px 0px 30px;
+}
+.right__item{
+    width: 33.33%;
+}
+.right__item li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.right__item a{
+    text-decoration: none;
+    color: #5A534F;
+}
+.footer__bottom{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.right__item a:hover{
+    color: #f8481c;
 }
