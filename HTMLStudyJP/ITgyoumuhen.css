@@ -53,17 +53,16 @@ td {
 table {
   border-collapse: collapse;
   text-align: center;
-
 }
 
 th {
   background-color: #69efad;
-  padding: 5px 20px;
+  padding: 5px 10px;
   font-size: 18px;
 }
 
 td {
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 .rowle {
@@ -76,4 +75,7 @@ td {
 p{
   color: rgb(201, 15, 15);
   font-weight: 600;
+}
+.control-audio {
+  cursor: pointer;
 }
