@@ -1,9 +1,25 @@
 /* Style the tab */
-h1 {
-  text-align: center;
-  background-color: #2bbc7d;
+.clear{
+  clear: both;
 }
-
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.header img{
+  float: left;
+  width: 130px;
+  margin-bottom: 7px;
+  padding-left: 25px;
+}
+.header__title{
+  text-align: center;
+  line-height: 15px;
+  display: inline;
+  float: left;
+  margin-left: 20%;
+  color: #03723b;
+}
 .tab {
   overflow: hidden;
   border: 1px solid #69efad;
@@ -13,13 +29,16 @@ h1 {
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 5px 5px;
-  transition: 0.3s;
-  font-size: 17px;
+    float: left;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
@@ -39,7 +58,10 @@ h1 {
   border: 1px solid #ccc;
   border-top: none;
 }
-
+.tabcontent p,.tabcontent table{
+  margin: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
 .audio {
   width: 100%;
 }

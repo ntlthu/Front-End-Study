@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Luyện đọc tiếng Nhật">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truyện Cười Song Ngữ Nhật Việt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./truyencuoi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://theblogsnews.com/wp-content/uploads/2019/10/unnamed.png" alt="logo cuoi">
+        <div class="header__title">
+            <h1>
+                <span>Tuyển tập</span>
+                <span>truyện cười</span>
+                <span>song ngữ</span>
+                <span>Nhật Việt</span>
+            </h1>
+            <h3>Tổng hợp các câu chuyện cười hài hước, hóm hỉnh. Luyện nghe CD với người bản ngữ</h3>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'track1')">1</button>
+        <button class="tablinks" onclick="openTab(event, 'track2')">2</button>
+        <button class="tablinks" onclick="openTab(event, 'track3')">3</button>
+        <button class="tablinks" onclick="openTab(event, 'track4')">4</button>
+        <button class="tablinks" onclick="openTab(event, 'track5')">5</button>
+        <button class="tablinks" onclick="openTab(event, 'track6')">6</button>
+        <button class="tablinks" onclick="openTab(event, 'track7')">7</button>
+    </div>
+    <div id="track1" class="tabcontent">
+        <audio class="audio" controls loop src="./audio/1.つもり.mp3">1</audio>
+        <h2>１．つもり</h2>
+        <p>
+            &nbsp; &nbsp; あるけちん坊な男がおりました。
+        </p>
+    </div>
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        $(".control-audio").click(function () {
+            let src = $(this).attr("src");
+            const audio = new Audio(src);
+            audio.play();
+        });
+    </script>
+</body>
+
+</html>
