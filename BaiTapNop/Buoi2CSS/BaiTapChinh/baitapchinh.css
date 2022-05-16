@@ -1,26 +1,37 @@
 /* GLOBAL CSS  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.clear{
+    clear: both;
+}
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
     max-width: 1170px;
     margin: auto;
 }
+
 /* HEADER CSS */
-.header{
+.header {
     padding: 20px 0 0;
 }
-.header__content ul{
+
+.header__content ul {
     margin: 20px 0px;
 }
-.header__content li{
+
+.header__content li {
     display: inline;
     margin: 0px 20px;
 }
 
-.header__content i{
+.header__content i {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -32,33 +43,103 @@
     margin-right: 10px;
 }
 
-.header__content h2 a{
+.header__content h2 a {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #191b30;
     text-decoration: none;
 }
-.header__content{
+
+.header__content {
     position: relative;
 }
-.header__content h2{
+
+.header__content h2 {
     position: absolute;
     top: 1px;
     display: inline;
 }
-.header__content li a{
+
+.header__content li a {
     font-family: Arial, Helvetica, sans-serif;
     color: #212030;
     text-decoration: none;
 }
-.header__content li a:hover{
+
+.header__content li a:hover {
     color: #fdc800;
 }
 
 /* CAROUSEL CSS */
-.carousel{
+.carousel {
     background-image: url(./images/2.jpg);
     height: 600px;
     background-size: cover;
     margin-bottom: 50px;
+}
+
+/* PHAN 3: WELCOME CSS */
+.welcome__left,
+.welcome__right {
+    float: left;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.welcome__left h1 {
+    font-weight: 790;
+}
+
+.welcome__left p {
+    color: #797979;
+    line-height: 25px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #fdc800;
+    border: 1px solid transparent;
+    color: #002146;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+button:hover{
+    background-color: #002045;
+    color: #ebe9e9;
+}
+.welcome__right img{
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+}
+
+/* COURSE CSS */
+.choice{
+background-color: #f6f6f6;
+margin: 50px 0;
+padding: 50px 0;
+
+}
+.course a{
+    text-decoration: none;
+}
+.choice__item,.item__left,.item__right{
+    float: left;
+}
+.choice__item{
+    width: 25%;
+}
+.item__left{
+    width: 30%;
+    font-size: 35px;
+    font-weight: 900;
+    color: black;
+}
+.item__right{
+    width: 70%;
+    padding: 11px 0;
+    line-height: 30px;
+    color: black;
+    font-size: 20px;
 }
