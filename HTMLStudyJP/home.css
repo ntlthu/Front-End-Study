@@ -1,0 +1,29 @@
+/* GLOBAL CSS */
+html,body{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.body{
+    background-color: #c6f8e4;
+    border-radius: 30px; 
+}
+.logo img{
+    width: 200px;
+}
+.button a{
+    text-decoration: none;
+}
+.button button{
+    font-size: 25px;
+    color: #03723b;
+    width: 400px;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#03723b 15px,#fff 0);
+}
+.button button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}

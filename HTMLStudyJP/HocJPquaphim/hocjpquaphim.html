@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Luyện tiếng nhật qua phim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tiếng nhật qua phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="./hoctiengnhatquaphim.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="../index.html"><img src="../logo_250px_paci.png" alt="logo"></a>
+            <div class="header__title">
+                <h1>Luyện tiếng nhật qua phim</h1>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'track1')">Video</button>
+        <button class="tablinks" onclick="openCity(event, 'track2')">Track 2</button>
+        <button class="tablinks" onclick="openCity(event, 'track3')">Track 3</button>
+    </div>
+    <div id="track1" class="tabcontent">
+        <video src="./audio/y2mate.com - HỌC TIẾNG NHẬT QUA PHIM ANIME  色づく世界の明日から  TẬP 1  13_1080pFHR.mp4" controls></video>
+    </div>
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        $(".control-audio").click(function () {
+            let src = $(this).attr("src");
+            const audio = new Audio(src);
+            audio.play();
+        });
+    </script>
+</body>
+</html>

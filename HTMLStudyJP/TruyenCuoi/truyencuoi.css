@@ -2,9 +2,13 @@
 .clear{
   clear: both;
 }
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
 .header img{
   float: left;
-  width: 100px;
+  width: 130px;
   margin-bottom: 15px;
   padding-left: 25px;
 }
@@ -13,7 +17,8 @@
     line-height: 15px;
     display: inline;
     float: left;
-    margin-left: 10%;
+    margin-left: 8%;
+    padding-top: 25px;
   }
   .header__title h1 span:first-child,.header h1 span:nth-child(3){
     color: #04581d;
@@ -59,7 +64,6 @@
   
   /* Style the tab content */
   .tabcontent {
-    display: none;
     padding: 10px 12px;
     border: 1px solid #ccc;
     border-top: none;
@@ -70,6 +74,11 @@
     font-weight: bold;
     color: blue;
     padding-left: 10px;
+  }
+  .tabcontent h3{
+    width: 500px;
+    background-color: rgb(189, 107, 248);
+    text-align: center;
   }
   .audio {
     width: 100%;
@@ -104,12 +113,15 @@
     background-color: white;
   }
   p{
-    font-weight: 600;
     padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .control-audio {
     cursor: pointer;
   }
-  [title]{
+  .tabcontent p span{
     cursor: pointer;
+  }
+  .tabcontent p span:hover{
+    background-color: aqua;
   }

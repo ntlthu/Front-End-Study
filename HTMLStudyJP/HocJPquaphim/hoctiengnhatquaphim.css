@@ -104,3 +104,6 @@ p{
 [title]{
   cursor: pointer;
 }
+#track1 video{
+  width: 100%;
+}
