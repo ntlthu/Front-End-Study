@@ -96,7 +96,7 @@ body {
     font-size: 15px;
 }
 
-button {
+.btn1 {
     padding: 10px 25px;
     background-color: #fdc800;
     border: 1px solid transparent;
@@ -105,7 +105,7 @@ button {
     border-radius: 5px;
     margin-top: 15px;
 }
-button:hover{
+.btn1:hover{
     background-color: #002045;
     color: #ebe9e9;
 }
@@ -128,18 +128,19 @@ padding: 50px 0;
     float: left;
 }
 .choice__item{
-    width: 25%;
+    width: 20%;
+    margin-left: 50px;
 }
 .item__left{
     width: 30%;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 900;
     color: black;
 }
 .item__right{
     width: 70%;
-    padding: 11px 0;
-    line-height: 30px;
+    padding: 11px 11px;
+    line-height: 28px;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
