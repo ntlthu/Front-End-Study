@@ -129,7 +129,6 @@ padding: 50px 0;
 }
 .choice__item{
     width: 20%;
-    margin-left: 50px;
 }
 .item__left{
     width: 30%;
@@ -143,4 +142,10 @@ padding: 50px 0;
     line-height: 28px;
     color: black;
     font-size: 18px;
+}
+.container .choice__item:first-child{
+    margin-left: 40px;
+}
+.container .choice__item:nth-child(2),.container .choice__item:nth-child(3),.container .choice__item:nth-child(4){
+    margin-left: 60px;
 }
