@@ -4,9 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.clear{
+
+.clear {
     clear: both;
 }
+
 html,
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -105,71 +107,165 @@ body {
     border-radius: 5px;
     margin-top: 15px;
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: #002045;
     color: #ebe9e9;
 }
-.welcome__right img{
+
+.welcome__right img {
     border-radius: 0 5px 5px 0;
     width: 100%;
 }
 
 /* COURSE CSS */
-.choice{
-background-color: #f6f6f6;
-margin: 50px 0;
-padding: 50px 0;
+.choice {
+    background-color: #f6f6f6;
+    margin: 50px 0;
+    padding: 50px 0;
 
 }
-.course a{
+
+.choice a {
     text-decoration: none;
 }
-.choice__item,.item__left,.item__right{
+
+.choice__item,
+.choice__left,
+.choice__right {
     float: left;
 }
-.choice__item{
+
+.choice__item {
     width: 20%;
+    margin: 0% 2.5%;
 }
-.item__left{
+
+.choice__left {
     width: 30%;
     font-size: 33px;
     font-weight: 900;
     color: black;
 }
-.item__right{
+
+.choice__right {
     width: 70%;
     padding: 11px 11px;
     line-height: 28px;
     color: black;
     font-size: 18px;
 }
-.container .choice__item:first-child{
-    margin-left: 40px;
-}
-.container .choice__item:nth-child(2),.container .choice__item:nth-child(3),.container .choice__item:nth-child(4){
-    margin-left: 60px;
-}
+
 
 /* ICON CSS  */
-.icon{
+.icon {
     margin: 30px 0;
 }
-.icon__item{
+
+.icon__item {
     float: left;
     width: 25%;
     text-align: center;
     padding: 20px;
 }
-.icon__item a{
+
+.icon__item a {
     text-decoration: none;
     color: white;
 }
-.item__card{
+
+.item__card {
     background-color: #002146;
     border-radius: 5px;
     padding: 30px 0;
 }
-.item__card i{
+
+.item__card i {
     font-size: 40px;
     margin-bottom: 20px;
+}
+
+/* NEWS CSS  */
+.news{
+    background-color: #f6f6f6;
+    padding: 70px 0;
+    margin-top: 55px;
+}
+.news__left{
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+}
+.news__right{
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.item__left{
+    float: left;
+    width: 40%;
+    padding: 25px 20px;
+}
+
+.item__right{
+    float: left;
+    width: 60%;
+    padding: 25px 20px 25px 10px;
+}
+.item__left img{
+    width: 100%;
+    border-radius: 5px;
+}
+.left_content{
+    background-color: #ffffff;
+}
+.news h1{
+    margin-bottom: 30px;
+}
+.left_content hr{
+    margin: 10px 5%;
+    width: 90%;
+}
+.news__left > .btn1, .news__right > .btn1{
+    float: right;
+}
+.calender{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.calender .cld__md{
+    text-align: center;
+    background-color: #fdc800;
+    padding: 15px 0px;
+    border-radius: 5px 5px 0 0;
+}
+.calender .cld__md h2{
+    margin-bottom: 5px;
+}
+.calender .cld__y{
+    text-align: center;
+    background-color: #002146;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+.detail{
+    margin: 25px 0;
+    background-color: white;
+}
+.right_text{
+    float: left;
+    width: 75%;
+    padding: 20px 0;
+}
+.right_text p{
+    margin: 15px 0;
+}
+.right_text span{
+    color: #002146;
+    font-weight: 540;
 }
