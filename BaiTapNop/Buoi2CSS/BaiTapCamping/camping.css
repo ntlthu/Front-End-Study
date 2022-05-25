@@ -15,7 +15,7 @@ html,body{
     padding: 15px 80px;
     background-color: #f8e1db;
 }
-.header li{
+.header .header__nav li{
     display: inline;
     margin-right: 50px;
 }
@@ -28,7 +28,7 @@ html,body{
 .header a:hover{
     color: #e76f51;
 }
-.header img{
+.header .header__logo img{
     margin-bottom: 15px;
 }
 
