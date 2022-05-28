@@ -58,19 +58,19 @@ html,body{
     float: left;
     width: 25%;
 }
-.item__card{
+.activities__item-card{
     background-color: white;
     padding: 35px;
     border-radius: 20px;
 }
-.card_img img{
+.card__img img{
     border-radius: 20px;
 }
-.card_img{
+.card__img{
     position: relative;
     margin-bottom: 20px;
 }
-.card_img i{
+.card__img i{
     position: absolute;
     left: 211px;
     top: 24px;
@@ -85,7 +85,7 @@ html,body{
     z-index: ;
     cursor: pointer;
 }
-.card_text p{
+.card__text p{
     line-height: 30px;
     margin: 20px 0;
     padding: 0 10px;
@@ -101,13 +101,13 @@ html,body{
 .btn:hover{
     background-color: #f14b21;
 }
-.activities__end .btn{
+.btn--end{
     border: 1px solid tomato;
     color: #f14b21;
     padding: 7px 50px;
     margin-top: 15px;
 }
-.activities__end .btn:hover{
+.btn--end:hover{
     color: white;
 }
 
@@ -118,7 +118,7 @@ html,body{
     background-color: #f8e1db;
     border-radius: 20px;
 }
-.banner__left,.banner__right,.content__app,.content__social{
+.banner__left,.banner__right,.banner__right-contentapp,.banner__right-contentIcon{
     float: left;
     width: 50%;
 }
@@ -133,18 +133,19 @@ html,body{
     padding: 70px 50px;
     color: #81807f;
 }
-.banner__title{
+.banner__right-title{
     margin-bottom: 20px;
 }
 
-.content__app h3,.content__social h3,.banner__title h1{
+.banner__right-contentapp h3,.banner__right-contentIcon h3,.banner__right-title h1{
     margin-bottom: 15px;
 }
-.content__social i{
+
+.banner__right-contentIcon i{
     color: #e76f51;
     padding-right: 5px;
 }
-.banner__content a:hover{
+.banner__right-content a:hover{
     cursor: pointer;
     background-color: aquamarine;
 }
@@ -158,7 +159,7 @@ html,body{
 .footer h4{
     margin-bottom: 20px;
 }
-.footer__left,.footer__right,.right__item{
+.footer__left,.footer__right,.footer__right-item{
     float: left;
 }
 .footer__left{
@@ -172,14 +173,14 @@ html,body{
     width: 60%;
     padding: 100px 0px 30px;
 }
-.right__item{
+.footer__right-item{
     width: 33.33%;
 }
-.right__item li{
+.footer__right-item li{
     list-style: none;
     margin-bottom: 15px;
 }
-.right__item a{
+.footer__right-item a{
     text-decoration: none;
     color: #5A534F;
 }
@@ -187,6 +188,6 @@ html,body{
     text-align: center;
     padding-bottom: 50px;
 }
-.right__item a:hover{
+.footer__right-item a:hover{
     color: #f8481c;
 }
