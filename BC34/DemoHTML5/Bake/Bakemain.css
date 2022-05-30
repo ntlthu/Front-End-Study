@@ -1,0 +1,173 @@
+/* GLOBAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* font-size: 16px; */
+    /* giá trị của rem phụ thuộc vào thuộc tính font-size được khai báo ở thẻ html 
+    ví dụ của trường hợp này 1 rem = 16px */
+    font-size: 62.5%;
+    /* set font-size 62.5% để dễ chuyển đổi đơn vị từ px sang rem, 62.5% sẽ tương đương = 10px, như vậy 1rem =10px, thì 12px = 1.2rem */
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    background: #fff;
+    letter-spacing: 0.1rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+:root{
+    --white: white;
+}
+button {
+    padding: 1.3rem 3.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--white);
+    background-color: #ff0e83;
+    color: var(--white);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: var(--white);
+    border: 1px solid #ff0e83;
+    color: #212529;
+}
+
+/* HEADER CSS  */
+.header{
+    background-color: #4e2a84;
+    padding: 20px 0;
+    
+}
+.header__content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__link{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0.4rem;
+    padding: 0 1.2rem;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    /* transition nên để ở vị trí trước khai báo hover thì hiệu ứng lúc rê chuột vào và di chuyện ra nó chuyển động từ từ giống nhau, còn nếu để ở hover thì hiệu lúc lúc rê chuột vào là giống khai ở transition, nhưng khi rê chuột ra thì nó thay đổi rất nhanh */
+}
+.header__content p{
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+.hover:hover{
+    color: #ff0e83;
+}
+.active{
+    color: #ff0e83;
+}
+
+/* CAROUSEL CSS */
+.carousel{
+    background-image: url(./web/images/b3.jpg);
+    height: 80rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel__content{
+    color: #fff;
+}
+
+.carousel__content h1{
+    font-size: 5.2rem;
+    letter-spacing: 3px;
+}
+.carousel__content p{
+    font-size: 1.7rem;
+    padding: 2.3rem 0;
+}
+
+/* INTRO CSS  */
+.intro{
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%;  khi kích thước của các cột là như nhau như trường hợp này thì ta dùng cách viết ngắn gọn sau đây*/
+    /* grid-template-columns: repeat(4,25%); */
+    /* tuy nhiên đối với grid thì có 1 đơn vị tốt hơn là fr = fraction = phân số , thường được ưu tiên sử dụng*/
+    grid-template-columns: repeat(4,1fr);
+    /* viết 4,1fr nghĩa là mỗi column sẽ có kích thước là 1/4 */
+}
+.intro__ab1{
+    /* grid-column: n / m là thuộc tính gom cột, grid-row: n / span row là thuộc tính gom hàng  
+    n là số line bắt đầu, m là số line kết thúc*/
+    grid-column: 2 / span 2;
+    /* hoặc cách khai báo khác là grid-column: 2 / 4 */
+}
+.intro__bakebest{
+    grid-column: 1 / span 2;
+}
+.intro__ab4{
+    grid-column: 3 / span 2;
+}
+.intro__item img {
+    width: 100%;
+    display: block;
+    /* thêm display block cho hình để xoá khoảng hở giữa image trên và dưới, vì bản chất của thẻ img là inline */
+}
+.intro__item{
+    display: flex;
+    /* justify-content: center; ko cần khai báo thuộc tính này, vì trong trường hợp này kích thước của thẻ con chiếm 100% thẻ cha, nên ko có tác dụng
+    chỉ khai báo thuộc tính này đối với trường hợp như của phần carousel, vì kích thước thẻ con lúc đó không chiếm 100% thẻ cha*/
+    align-items: center;
+    text-align: center;
+
+}
+
+.intro__item h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1.6rem;
+}
+.intro__item p{
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+    color: #c1c1c1
+}
+.intro__item--bg1,.intro__item--bg6{
+    background: #4e2a84;
+    padding: 0 3.2rem;
+}
+.intro__item--bg3{
+    background: #ff0e83;
+    padding: 0 3.2rem;
+}
+.intro__item--bg4{
+    background: #ed6498;
+    padding: 0 3.2rem;
+}
+.intro__item--bg5{
+    background: #836eaa;
+    padding: 0 3.2rem;
+}
+/* .intro__item--bg6{
+    background: #4e2a84;
+    padding: 0 3.2rem;
+} */

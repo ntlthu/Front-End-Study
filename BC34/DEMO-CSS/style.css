@@ -1,0 +1,25 @@
+
+/* muốn import 1 file css khác  thì dùng cú pháp @import, gõ gg import css coi w3school */
+h1{
+    background-color: aqua;
+    color: green;
+}
+
+p{
+    font-size: 40px;
+}
+#title{
+    background-color: red;
+}
+.title{
+    background-color: green;
+    color: aliceblue;
+}
+
+.title1{
+    color: black;
+}
+div h1{
+    background-color: yellow;
+}
+/* .title.title1 cách viết selector cùng cấp, nghĩa là cách viết này sẽ css cho thẻ h1, có class là title title1 */

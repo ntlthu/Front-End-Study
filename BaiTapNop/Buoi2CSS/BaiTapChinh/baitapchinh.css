@@ -101,7 +101,7 @@ li {
 }
 
 .welcome__left p {
-    color: #797979;
+    color: #333;
     line-height: 25px;
     margin: 15px 0;
     font-size: 15px;
@@ -114,9 +114,11 @@ li {
     color: #002146;
     font-weight: 800;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
-
+.btn--special{
+    margin-top: 0px;
+}
 .btn:hover {
     background-color: rgba(253, 198, 0, 0.5);
     transform: scale(1.5, 1.5);
@@ -194,8 +196,9 @@ li {
 /* NEWS CSS  */
 .news {
     background-color: #f6f6f6;
-    padding: 70px 0;
+    padding: 90px 0;
     margin-top: 55px;
+
 }
 
 .news__left {
@@ -210,24 +213,34 @@ li {
     padding-left: 20px;
 }
 
-.item__left {
+.news__left-item-left {
     float: left;
     width: 40%;
     padding: 25px 20px;
 }
 
-.item__right {
+.news__left-item-left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.news__left-item-right {
     float: left;
     width: 60%;
     padding: 25px 20px 25px 10px;
 }
 
-.item__left img {
-    width: 100%;
-    border-radius: 5px;
+.news__left-item-right p {
+    margin: 10px 0;
+    color: #333;
+    line-height: 25px;
 }
 
-.left_content {
+.news__left-item-right .yearmonthday{
+    color: rgba(121, 121, 121, 0.6); 
+    padding-bottom: 10px;
+}
+.news__left-content {
     background-color: #ffffff;
 }
 
@@ -235,7 +248,7 @@ li {
     margin-bottom: 30px;
 }
 
-.left_content hr {
+.news__left-content hr {
     margin: 10px 5%;
     width: 90%;
 
@@ -255,12 +268,13 @@ li {
 .calender .cld__md {
     text-align: center;
     background-color: #fdc800;
-    padding: 15px 0px;
+    padding: 20px 0px;
     border-radius: 5px 5px 0 0;
 }
 
 .calender .cld__md h2 {
     margin-bottom: 5px;
+    font-size: 32px;
 }
 
 .calender .cld__y {
@@ -268,28 +282,46 @@ li {
     background-color: #002146;
     color: white;
     border-radius: 0 0 5px 5px;
-    padding: 5px 0px;
+    padding: 10px 0px;
     font-size: 15px;
 }
 
-.detail {
+.news__right-detail {
     margin: 25px 0;
     background-color: white;
 }
 
-.right_text {
+.news__right-text {
     float: left;
     width: 75%;
-    padding: 20px 0;
+    padding: 20px 62px 20px 0;
 }
 
-.right_text p {
+.news__right-text p {
     margin: 15px 0;
+    text-align: justify;
+    color: #333;
 }
 
-.right_text span {
+.news__right-text span {
     color: #002146;
     font-weight: 540;
+}
+
+.news__right-text-span1 {
+    margin-right: 35px;
+    position: relative;
+}
+
+.news__right-text .border-separates::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid;
+    height: 25px;
+    display: block;
+    right: -20px;
+    top: -30%;
+    color: rgba(128, 128, 128, 0.5);
 }
 
 /* FOOTER CSS  */
@@ -302,10 +334,12 @@ li {
 .footer__item {
     float: left;
     width: 30%;
+    margin-right: 25px;
 }
 
-.footer__item h2 {
+.footer__item h3 {
     margin-bottom: 30px;
+    font-size: 22px;
 }
 
 .footer__item a {
@@ -321,10 +355,10 @@ li {
 }
 
 .footer hr {
-    background: rgba(67, 66, 66, 0.5);
+    background: rgba(253, 198, 0, 0.3);
     border: 0;
-    height: 2px;
-    margin: 10px 0 40px;
+    height: 1px;
+    margin: 15px 0 35px;
 }
 
 .footer__bottom-span {
@@ -332,7 +366,7 @@ li {
     margin-right: 12px;
 }
 
-.border-separates::after {
+.footer__bottom .border-separates::after {
     content: "";
     position: absolute;
     border-left: 2px solid;

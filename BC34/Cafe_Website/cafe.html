@@ -1,10 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <h1 style="color: white; background-color: darkblue; text-align: center;">CyberSoft Cafe</h1>
-    <a href="https://www.google.com/" target="_blank">Home</a>
-    <a href="#">Menu</a>
-    <a href="#">Order</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOP</title>
+</head>
+
+<body>
+    <!-- format document = Alt + Shift + F -->
+    <!-- HEADER  -->
+    <div>
+        <h1 id="top" style="color: white; background-color: darkblue; text-align: center;">CyberSoft Cafe</h1>
+    </div>
+    <!-- HEADER  -->
+    <!-- NAVIGATION BAR  -->
+    <div style="text-align: center;">
+        <a href="https://www.google.com/" target="_blank">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Order</a>
+    </div>
+    <!-- NAVIGATION BAR  -->
+
     <hr noshade="" width="400px" size="5px">
-    <h2 style="color: burlywood; text-align: center;">About Our Cafe</h2>
-    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor libero deserunt sed quod natus molestiae earum possimus beatae nobis, tenetur voluptas sit odit autem eum! Possimus distinctio, quae iusto hic ea mollitia ad aliquam in odit excepturi itaque, nemo voluptas repellat adipisci ducimus eum, voluptatem amet corporis quidem! Temporibus, pariatur.</p>
+    <!-- ABOUT CAFE  -->
+    <div>
+        <h2 style="color: burlywood; text-align: center;">About Our Cafe</h2>
+        <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Dolor libero deserunt sed
+            quod natus molestiae earum possimus beatae nobis, tenetur voluptas sit odit autem eum! Possimus distinctio,
+            quae <br>
+            iusto hic ea mollitia ad aliquam in odit excepturi itaque, nemo voluptas repellat adipisci ducimus eum,
+            voluptatem amet corporis quidem! Temporibus, pariatur.</p>
+    </div>
+    <!-- ABOUT CAFE  -->
+
     <hr noshade="" width="400px" size="5px">
-    <h2 style="color: burlywood; text-align: center;">Special Items</h2>
+
+    <!-- SPECIAL ITEM  -->
+    <div style="background-color: pink;">
+        <h2 style="color: burlywood; text-align: center;">Special Items</h2>
+        <h3>The coffee list 1</h3>
+        <ul type="circle">
+            <li>Black coffee</li>
+            <li>pink coffee</li>
+            <li>Green coffee</li>
+        </ul>
+
+        <img src="./Image_buoi1/chilling-cafe-11.jpg" alt="chilling">
+        <img src="./Image_buoi1/chilling-cafe-12.jpg" alt="chilling-cafe-12">
+
+        <h3>The coffee list 2</h3>
+
+        <ol type="I">
+            <li>Black coffee</li>
+            <li>pink coffee</li>
+            <li>Green coffee</li>
+        </ol>
+        <img src="./Image_buoi1/chilling-cafe-13.jpg" alt="chilling-cafe-13">
+        <img src="https://bonjourcoffee.vn/blog/wp-content/uploads/2020/01/cafe-latte.jpg" alt="hình cà phê"
+            width="400px">
+    </div>
+    <!-- SPECIAL ITEM  -->
+
+
+
+    <hr noshade="" width="50%" size="5px">
+
+    <!-- MENU  -->
+    <div>
+        <h2 style="color: burlywood; text-align: center;">Menu </h2>
+
+        <table border="1px" cellspacing="0" cellpadding="20px" width="70%" align="center">
+            <!-- dùng thead để ví dụ 1 talbe có nhiều trang thì khi in ra các trang sau nó cũng có tiêu đề, còn nếu dùng th thì khi in ra mà table có nhiều trang thì các trang sau sẽ ko đc nhận diện -->
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Traditional coffe</td>
+                    <td rowspan="2">Vietnamese coffee pin</td>
+                    <td>Hot</td>
+                    <td>60.000</td>
+                </tr>
+                <tr>
+                    <td>Cold</td>
+                    <td>28.000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Milk coffee</td>
+                    <td>Hot</td>
+                    <td>38.000</td>
+                </tr>
+                <tr>
+                    <td>Cold</td>
+                    <td>54.000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Expresso</td>
+                    <td>Amecian Coffee </td>
+                    <td rowspan="3">Hot</td>
+                    <td>110.000</td>
+                </tr>
+                <tr>
+                    <td>Machiato</td>
+                    <td rowspan="2">40.000</td>
+                </tr>
+                <tr>
+                    <td>Capuchino</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- MENU  -->
+
+    <hr noshade="" width="900px" size="5px">
+
+    <!-- FOOTER  -->
+    <div>
+        <h2 style="color: burlywood; text-align: center;">Talk to Us</h2>
+
+        <p style="text-align: center">
+            Reach us via <b>Email: <a href="mailto:cybersoft@gmail.com">cybersoft@gmail.com</a></b>
+            or <b>Hotline: <a href="tel:+0334643124">0334643124</a></b>
+            . Thank you!
+            <a href="#top">Back to top</a>
+        </p>
+    </div>
+
+    <!-- FOOTER  -->
+</body>
+
+
+</html>
