@@ -92,5 +92,83 @@
     </div>
 </section>
 <!-- END INTRO  -->
+
+   <!-- START NUMBER  -->
+   <section class="number">
+    <div class="number__content">
+        <div class="number__content-item">
+            <p class="counter">3500</p>
+            <p>Coffee</p>
+        </div>
+        <div class="number__content-item">
+            <p class="counter">650</p>
+            <p>Happy Client</p>
+        </div>
+        <div class="number__content-item">
+            <p class="counter">10</p>
+            <p>Experience</p>
+        </div>
+        <div class="number__content-item">
+            <p class="counter">1010</p>
+            <p>Expert Worker</p>
+        </div>
+    </div>
+</section>
+<!-- END NUMBER  -->
+
+<!-- START SERVICE -->
+<section class="service">
+    <h3 class="commonstyle">OUR SERVICES</h3>
+    <div class="service__content">
+        <div class="service__content-item">
+            <i class="fa fa-adjust ilogo hover"></i>
+            <h4>Tasty Cakes</h4>
+            <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+            <button>Learn more </button>
+        </div>
+        <div class="service__content-item">
+            <i class="fa fa-snowflake ilogo hover"></i>
+            <h4>Creativity</h4>
+            <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+            <button>Learn more </button>
+        </div>
+        <div class="service__content-item">
+            <i class="fa fa-chart-pie ilogo hover"></i>
+            <h4>Tradition</h4>
+            <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+            <button>Learn more </button>
+        </div>
+        <div class="service__content-item">
+            <i class="fab fa-slideshare ilogo hover"></i>
+            <h4>Quality</h4>
+            <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+            <button>Learn more </button>
+        </div>
+    </div>
+</section>
+<!-- END SERVICE  -->
+
+
+
+
+
+<!-- Thư viện hỗ trợ jquery giúp chạy hiệu ứng của các thư viện animation-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Jquery waypoint, vị trí của waypoint bắt buộc phải để ngay bên dưới của Jquery, tại vì waypoint sẽ sử dụng các code, hàm được tạo ra bởi jquery phía trên  -->
+
+<script src="./web/js/jquery.waypoints.min.js">
+</script>
+
+<!-- Import hàm count up, vị trí bắt buộc phải nằm bên dưới waypoint và jquery, vì countup sẽ sử dụng hàm của cả 2 thư viện phía trên, nên nếu để ở trên thì sẽ bị lỗi hàm chưa được khởi tạo  -->
+
+<script src="./web/js/jquery.countup.js"></script>
+
+<script>
+    $('.counter').countUp();
+</script>
+
+
+
 </body>
 </html>
