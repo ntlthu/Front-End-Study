@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #faf4f2;
+}
+.clearfix{
+    clear: both;
+}
+.header {
+  background-color: #f8e1db;
+  padding: 10px 30px;
+}
+
+.header .logo img {
+  width: 60px;
+}
+
+.header .navbar a {
+  color: #3a3735;
+  text-decoration: none;
+  /* font-size của text mặc định luôn luôn là 16px */
+  font-size: 20px;
+  font-weight: normal;
+  margin-right: 30px;
+  /* trường hợp cách thẻ a ra như này dùng padding vẫn thấy cách ra, nhưng tốt nhất là không nên dùng, vì dùng padding bị 1 bug là khi rê chuột vào khoảng trắng ko phải chữ home cũng có thể bấm link đi được */
+}
+
+.header .navbar a:hover {
+  color: #ff0000;
+}
+
+.carousel {
+  background-image: url(../img/BG.png);
+  height: 900px;
+  /* dưới đây những thuộc tính chỉ đi kèm với background-image, nếu ko có bg-img thì có cũng như không */
+  /* ko lặp lại hình */
+  background-repeat: no-repeat;
+  /* kích thước của image, có 2 giá trị x &y vị trí theo chiều ngang và theo chiều dọc */
+  background-size: cover;
+  /* vị trí của background, cũng có 2 giá trị theo chiều dọc và theo chiều ngang (left top / right bottom/ bottom bottom/ ghi 1 value center thì nghĩa là 2 value đều là center*/
+  background-position: center;
+}
+
+/* Phần activity title dùng thẻ h nào cũng được trừ thẻ h1, vì thẻ h1 được SEO của GG quan tâm nhất, để recommend lên GG, thường h1 chỉ dùng cho tên sản phẩm thôi, dùng h1 để giúp tăng SEO của GG lên */
+
+.activity {
+  padding: 80px 0;
+}
+
+.activity .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.activity .title h2 {
+  color: #8d8d8d;
+  font-size: 40px;
+}
+
+.activity .main .row .col {
+  float: left;
+  /* width: 25%; */
+  /* dùng hàm calc(100% / 4) để cho hệ thống tự chia kích thước*/
+  width: calc(100% / 4);
+  padding: 0 15px;
+}
+
+.activity .main .item {
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.activity .main .item .thumbnail img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.activity .main .item h1 {
+  font-size: 25px;
+  margin-top: 15px;
+}
+.activity .main .item p {
+  font-size: 17px;
+  color: #8d8d8d;
+  margin-top: 15px;
+  line-height: 30px;
+}
+.activity .main .item a {
+  background-color: #e8e8e8;
+  /* đặc tính của thẻ inline là ko dùng padding được, không dùng margin được,  */
+  /* padding: 10px 40px; ko dùng padding được, vì a là thẻ inline, mặc định kích thước của nó là text, dùng padding thì nó sẽ che mất các phần tử khác*/
+  /* display: block; ko dùng được vì kích thước nó chiếm 100% và nó ko còn canh giữa nữa, vậy nên dùng :inline-block;*/
+  display: inline-block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #8d8d8d;
+  border-radius: 30px;
+  margin-top: 15px;
+}
