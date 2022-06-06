@@ -22,7 +22,7 @@
   <!-- OWL CAROUSEL CSS để tạo hiệu ứng trượt cho Carousel  -->
   <link rel="stylesheet" href="./web/css/owl.carousel.css">
   <link rel="stylesheet" href="./web/css/">
- 
+
   <!-- MAIN CSS  -->
   <link rel="stylesheet" href="./Bakemain.css" />
 </head>
@@ -470,30 +470,51 @@
     </div>
   </section> -->
   <!-- END TEAM -->
-<!-- START TESTIMONIALS HTML -->
-<section class="testimonials">
-  <h3 class="commonstyle">TESTIMONIALS</h3>
-  <div class="testimonials__content">
-    <div class="owl-carousel">
-      <div class="item">
-        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i class="fa fa-quote-right"></i>
-        </p>
-        <p>ALLYI</p>
-      </div>
-      <div class="item">
-        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i class="fa fa-quote-right"></i>
-        </p>
-      <p>WILLSON</p>
-      </div>
-      <div class="item">
-        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i class="fa fa-quote-right"></i>
-        </p>
-        <p>MAX</p>
+  <!-- START TESTIMONIALS HTML -->
+  <section class="testimonials">
+    <h3 class="commonstyle">TESTIMONIALS</h3>
+    <div class="testimonials__content">
+      <div class="owl-carousel">
+        <div class="item">
+          <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i
+              class="fa fa-quote-right"></i>
+          </p>
+          <p>ALLYI</p>
+        </div>
+        <div class="item">
+          <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i
+              class="fa fa-quote-right"></i>
+          </p>
+          <p>WILLSON</p>
+        </div>
+        <div class="item">
+          <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i
+              class="fa fa-quote-right"></i>
+          </p>
+          <p>MAX</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- END TESTIMONIALS HTML -->
+  </section>
+  <!-- END TESTIMONIALS HTML -->
+
+  <!-- START FORM CONTACT -->
+  <section class="form">
+    <form action="">
+      <h3>CONTACT</h3>
+      <div class="form__content">
+        <input class="common" type="text" placeholder="Name">
+        <input class="common" type="text" placeholder="Last Name">
+        <input class="common" type="email" name="email" id="email" placeholder="Email">
+        <input class="common" type="tel" name="tel" id="tel" placeholder="Phone">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+  </section>
+  <!-- END FORM CONTACT -->
 
   <!-- Thư viện hỗ trợ jquery giúp chạy hiệu ứng của các thư viện animation, đối với 1 trang web chỉ cần cài 1 thư viện jquery thôi-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -516,23 +537,23 @@
   <script src="./web/js/owl.carousel.js"></script>
   <script>
     $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true, 
-    autoplayTimeout:1000
-    responsive:{
-        0:{
-            items:1
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 1000
+    responsive: {
+        0: {
+          items: 1
         },
-        600:{
-            items:3
+        600: {
+          items: 3
         },
-        1000:{
-            items:5
+        1000: {
+          items: 5
         }
-    }
-})
+      }
+    })
   </script>
 
 </body>

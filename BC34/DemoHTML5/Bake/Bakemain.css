@@ -508,3 +508,11 @@ element.style {
 
 
 /* Để tạo hiệu ứng cho phần TESTIMONIALS thì dùng thư viện Owl Carousel hoặc slick hoặc Swiper*/
+
+/* form css */
+.form h3{
+  font-size: 5rem;
+  padding: 7rem 0;
+  text-align: center;
+}
+/* Thuộc tính "disabled" có thể sử dụng ở các thẻ như thẻ a, thẻ button, giúp cho người dùng không click vào đc link đó hoặc button đó */
