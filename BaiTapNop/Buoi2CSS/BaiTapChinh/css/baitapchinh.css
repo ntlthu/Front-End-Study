@@ -1,0 +1,377 @@
+/* GLOBAL CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER CSS */
+.header {
+    padding: 20px 0 0;
+}
+
+.header__content ul {
+    margin: 20px 0px;
+}
+
+.header__content li {
+    display: inline;
+    margin: 0px 20px;
+}
+
+.ilogo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #002045;
+    line-height: 35px;
+    text-align: center;
+}
+
+.istyle {
+    font-size: 16px;
+    color: rgba(249, 203, 0, 0.906);
+    margin-right: 10px;
+}
+
+.header__content h2 a {
+    font-size: 30px;
+    color: #191b30;
+}
+
+.header__content {
+    position: relative;
+}
+
+.header__content h2 {
+    position: absolute;
+    top: 1px;
+    display: inline;
+}
+
+.header__content li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212030;
+}
+
+.hover-change-color:hover {
+    color: #fdc800;
+}
+
+/* CAROUSEL CSS */
+.carousel {
+    background-image: url(./images/2.jpg);
+    height: 600px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+/* PHAN 3: WELCOME CSS */
+.welcome__left,
+.welcome__right {
+    float: left;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.welcome__left h1 {
+    font-weight: 790;
+}
+
+.welcome__left p {
+    color: #333;
+    line-height: 25px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #fdc800;
+    border: 1px solid transparent;
+    color: #002146;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.btn--special{
+    margin-top: 0px;
+}
+.btn:hover {
+    background-color: rgba(253, 198, 0, 0.5);
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+}
+
+.welcome__right img {
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+}
+
+/* CHOICE CSS */
+.choice {
+    background-color: #f6f6f6;
+    margin: 50px 0;
+    padding: 50px 0;
+
+}
+
+.choice a {
+    text-decoration: none;
+}
+
+.choice__item {
+    float: left;
+    width: 20%;
+    margin: 0% 2.5%;
+}
+
+.choice__item-left {
+    float: left;
+    width: 30%;
+    font-size: 33px;
+    font-weight: 900;
+    color: black;
+}
+
+.choice__item-right {
+    float: left;
+    width: 70%;
+    padding: 11px 11px;
+    line-height: 28px;
+    color: black;
+    font-size: 18px;
+}
+
+
+/* ICON CSS  */
+.icon {
+    margin: 30px 0;
+}
+
+.icon__item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon__item a {
+    color: white;
+}
+
+.icon__item-card {
+    background-color: #002146;
+    border-radius: 5px;
+    padding: 30px 0;
+}
+
+.icon__item-card i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* NEWS CSS  */
+.news {
+    background-color: #f6f6f6;
+    padding: 90px 0;
+    margin-top: 55px;
+
+}
+
+.news__left {
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.news__right {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.news__left-item-left {
+    float: left;
+    width: 40%;
+    padding: 25px 20px;
+}
+
+.news__left-item-left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.news__left-item-right {
+    float: left;
+    width: 60%;
+    padding: 25px 20px 25px 10px;
+}
+
+.news__left-item-right p {
+    margin: 10px 0;
+    color: #333;
+    line-height: 25px;
+}
+
+.news__left-item-right .yearmonthday{
+    color: rgba(121, 121, 121, 0.6); 
+    padding-bottom: 10px;
+}
+.news__left-content {
+    background-color: #ffffff;
+}
+
+.news h1 {
+    margin-bottom: 30px;
+}
+
+.news__left-content hr {
+    margin: 10px 5%;
+    width: 90%;
+
+}
+
+.news__left>.btn,
+.news__right>.btn {
+    float: right;
+}
+
+.calender {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.calender .cld__md {
+    text-align: center;
+    background-color: #fdc800;
+    padding: 20px 0px;
+    border-radius: 5px 5px 0 0;
+}
+
+.calender .cld__md h2 {
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.calender .cld__y {
+    text-align: center;
+    background-color: #002146;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+.news__right-detail {
+    margin: 25px 0;
+    background-color: white;
+}
+
+.news__right-text {
+    float: left;
+    width: 75%;
+    padding: 20px 62px 20px 0;
+}
+
+.news__right-text p {
+    margin: 15px 0;
+    text-align: justify;
+    color: #333;
+}
+
+.news__right-text span {
+    color: #002146;
+    font-weight: 540;
+}
+
+.news__right-text-span1 {
+    margin-right: 35px;
+    position: relative;
+}
+
+.news__right-text .border-separates::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid;
+    height: 25px;
+    display: block;
+    right: -20px;
+    top: -30%;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+/* FOOTER CSS  */
+.footer {
+    background-color: #002146;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer__item {
+    float: left;
+    width: 30%;
+    margin-right: 25px;
+}
+
+.footer__item h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.footer__item a {
+    color: white;
+}
+
+.footer__item span {
+    line-height: 25px;
+}
+
+.footer__item-common-margin {
+    margin-bottom: 20px;
+}
+
+.footer hr {
+    background: rgba(253, 198, 0, 0.3);
+    border: 0;
+    height: 1px;
+    margin: 15px 0 35px;
+}
+
+.footer__bottom-span {
+    position: relative;
+    margin-right: 12px;
+}
+
+.footer__bottom .border-separates::after {
+    content: "";
+    position: absolute;
+    border-left: 2px solid;
+    height: 14px;
+    display: block;
+    right: -9px;
+    top: 9%;
+}
