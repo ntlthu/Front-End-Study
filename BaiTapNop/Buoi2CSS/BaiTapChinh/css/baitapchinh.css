@@ -82,7 +82,7 @@ li {
 
 /* CAROUSEL CSS */
 .carousel {
-    background-image: url(./images/2.jpg);
+    background-image: url(../images/2.jpg);
     height: 600px;
     background-size: cover;
     margin-bottom: 50px;
