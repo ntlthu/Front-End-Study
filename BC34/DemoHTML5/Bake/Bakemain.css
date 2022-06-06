@@ -385,3 +385,126 @@ button:hover {
 
 /* Dùng thư viện animation lightbox js để hiện pop-up */
 /* Nhấn ctrl + F5 để clear cache */
+
+/* TEAM CSS  */
+.team{
+  background-color: #4e2a84;
+}
+.team h3{
+  text-align: center;
+  padding-top: 7rem;
+}
+.team__content{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5rem 3rem;
+}
+
+.team__content-item{
+  position: relative;
+}
+.team__content-item img{
+width: 100%;
+display: block;
+
+}
+
+.team__name {
+  background-color: rgb(255, 15, 131);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 3.5rem 2.5rem;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.team__name h2, .team__detail h2{
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.team__name p, .team__detail p{
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+.team__detail{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  padding: 7rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.team__detail h2 {
+  color: #ff0e83;
+}
+
+.team__content-item:hover .team__name{
+opacity: 0;
+}
+
+.team__content-item:hover .team__detail{
+opacity: 1;
+}
+
+/* TESTIMONIALS CSS */
+.testimonials{
+  background-image: url(./web/images/cc1.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0;
+}
+
+.testimonials h3{
+  text-align: center;
+  padding-top: 7rem;
+}
+.testimonials__content{
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid #ff0e83;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 3.2rem;
+}
+
+.item p:first-of-type{
+font-size: 1.6rem;
+color: black;
+line-height: 3rem;
+letter-spacing: 0.3rem;
+}
+.item p:last-of-type{
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 0.3rem;
+}
+.item p i{
+  color: #2cbeff;
+  font-size: 3.3rem;
+  padding: 0 1.8rem;
+}
+
+
+element.style {
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+}
+
+
+/* Để tạo hiệu ứng cho phần TESTIMONIALS thì dùng thư viện Owl Carousel hoặc slick hoặc Swiper*/

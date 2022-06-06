@@ -1,262 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BAKE</title>
 
-    <!-- FONT GOOGLE  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAKE</title>
 
-    <!-- FONT ICON  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-<!-- LIGHTBOX dùng để tạo pop-up xem ảnh -->
-<link rel="stylesheet" href="./web/css/lightbox.css">
-    <!-- MAIN CSS  -->
-    <link rel="stylesheet" href="./Bakemain.css" />
-  </head>
-  <body>
-    <!-- HEADER  -->
-    <header class="header">
-      <div class="header__content">
-        <p>BAKE</p>
-        <nav>
-          <ul>
-            <li><a class="active hover header__link" href="#">HOME</a></li>
-            <li><a class="hover header__link" href="#">ABOUT</a></li>
-            <li><a class="hover header__link" href="#">SERVICE</a></li>
-            <li><a class="hover header__link" href="#">GALLERY</a></li>
-            <li><a class="hover header__link" href="#">CLIENTS</a></li>
-            <li><a class="hover header__link" href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- END HEADER  -->
+  <!-- FONT GOOGLE  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap"
+    rel="stylesheet" />
 
-    <!-- CAROUSEL HTML  -->
-    <section class="carousel">
-      <div class="carousel__content">
-        <h1>Best Bake Here</h1>
-        <p>Donec at massa nec sem eleifend fermentum.</p>
-        <button>LEARN MORE</button>
-      </div>
-    </section>
-    <!-- END CAROUSEL  -->
+  <!-- FONT ICON  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- LIGHTBOX dùng để tạo pop-up xem ảnh -->
+  <link rel="stylesheet" href="./web/css/lightbox.css">
 
-    <!-- START INTRO  -->
-    <section class="intro">
-      <div class="intro__item intro__item--bg1">
-        <div>
-          <h2>Tradition</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor
-          </p>
-        </div>
-      </div>
-      <div class="intro__item intro__ab1">
-        <img src="./web/images/ab1.jpg" alt="ab1.jpg" />
-      </div>
-      <div class="intro__item intro__item--bg3">
-        <div>
-          <h2>Creativity</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor
-          </p>
-        </div>
-      </div>
-      <div class="intro__item intro__bakebest intro__item--bg4">
-        <div>
-          <h2>What We Bake Best For You</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolorL orem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor
-          </p>
-        </div>
-      </div>
-      <div class="intro__item">
-        <img src="./web/images/ab2.jpg" alt="ab2.jpg" />
-      </div>
-      <div class="intro__item intro__item--bg5">
-        <div>
-          <h2>Quality</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget.
-          </p>
-        </div>
-      </div>
-      <div class="intro__item">
-        <img src="./web/images/ab3.jpg" alt="ab3.jpg" />
-      </div>
-      <div class="intro__item intro__item--bg6">
-        <div>
-          <h2>Tasty Cakes</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget.
-          </p>
-        </div>
-      </div>
-      <div class="intro__item intro__ab4">
-        <img src="./web/images/ab4.jpg" alt="ab4.jpg" />
-      </div>
-    </section>
-    <!-- END INTRO  -->
+  <!-- OWL CAROUSEL CSS để tạo hiệu ứng trượt cho Carousel  -->
+  <link rel="stylesheet" href="./web/css/owl.carousel.css">
+  <link rel="stylesheet" href="./web/css/">
+ 
+  <!-- MAIN CSS  -->
+  <link rel="stylesheet" href="./Bakemain.css" />
+</head>
 
-    <!-- START NUMBER  -->
-    <section class="number">
-      <div class="number__content">
-        <div class="number__content-item">
-          <p class="counter">3500</p>
-          <p>Coffee</p>
-        </div>
-        <div class="number__content-item">
-          <p class="counter">650</p>
-          <p>Happy Client</p>
-        </div>
-        <div class="number__content-item">
-          <p class="counter">10</p>
-          <p>Experience</p>
-        </div>
-        <div class="number__content-item">
-          <p class="counter">1010</p>
-          <p>Expert Worker</p>
-        </div>
-      </div>
-    </section>
-    <!-- END NUMBER  -->
+<body>
+  <!-- HEADER  -->
+  <header class="header">
+    <div class="header__content">
+      <p>BAKE</p>
+      <nav>
+        <ul>
+          <li><a class="active hover header__link" href="#">HOME</a></li>
+          <li><a class="hover header__link" href="#">ABOUT</a></li>
+          <li><a class="hover header__link" href="#">SERVICE</a></li>
+          <li><a class="hover header__link" href="#">GALLERY</a></li>
+          <li><a class="hover header__link" href="#">CLIENTS</a></li>
+          <li><a class="hover header__link" href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- END HEADER  -->
 
-    <!-- START SERVICE -->
-    <section class="service">
-      <h3 class="commonstyle">OUR SERVICES</h3>
-      <div class="service__content">
-        <div class="service__content-item">
-          <i class="fa fa-adjust ilogo hover"></i>
-          <h4>Tasty Cakes</h4>
-          <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
-          <button>Learn more</button>
-        </div>
-        <div class="service__content-item">
-          <i class="fa fa-snowflake ilogo hover"></i>
-          <h4>Creativity</h4>
-          <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
-          <button>Learn more</button>
-        </div>
-        <div class="service__content-item">
-          <i class="fa fa-chart-pie ilogo hover"></i>
-          <h4>Tradition</h4>
-          <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
-          <button>Learn more</button>
-        </div>
-        <div class="service__content-item">
-          <i class="fab fa-slideshare ilogo hover"></i>
-          <h4>Quality</h4>
-          <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
-          <button>Learn more</button>
-        </div>
-      </div>
-    </section>
-    <!-- END SERVICE  -->
+  <!-- CAROUSEL HTML  -->
+  <section class="carousel">
+    <div class="carousel__content">
+      <h1>Best Bake Here</h1>
+      <p>Donec at massa nec sem eleifend fermentum.</p>
+      <button>LEARN MORE</button>
+    </div>
+  </section>
+  <!-- END CAROUSEL  -->
 
-    <!-- START GALLERY -->
-    <section class="gallery">
-      <h3 class="commonstyle">OUR GALLERY</h3>
-      <div class="gallery__content">
-        <!-- thẻ figure chuyên dùng cho phần hình ảnh của html5 -->
-        <figure class="gallery__item gallery__g1">
-          <a href="./web/images/g1.jpg" data-lightbox="gallery">
-            <img src="./web/images/g1.jpg" alt="g1.jpg">
+  <!-- START INTRO  -->
+  <section class="intro">
+    <div class="intro__item intro__item--bg1">
+      <div>
+        <h2>Tradition</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor
+        </p>
+      </div>
+    </div>
+    <div class="intro__item intro__ab1">
+      <img src="./web/images/ab1.jpg" alt="ab1.jpg" />
+    </div>
+    <div class="intro__item intro__item--bg3">
+      <div>
+        <h2>Creativity</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor
+        </p>
+      </div>
+    </div>
+    <div class="intro__item intro__bakebest intro__item--bg4">
+      <div>
+        <h2>What We Bake Best For You</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolorL orem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor
+        </p>
+      </div>
+    </div>
+    <div class="intro__item">
+      <img src="./web/images/ab2.jpg" alt="ab2.jpg" />
+    </div>
+    <div class="intro__item intro__item--bg5">
+      <div>
+        <h2>Quality</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget.
+        </p>
+      </div>
+    </div>
+    <div class="intro__item">
+      <img src="./web/images/ab3.jpg" alt="ab3.jpg" />
+    </div>
+    <div class="intro__item intro__item--bg6">
+      <div>
+        <h2>Tasty Cakes</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget.
+        </p>
+      </div>
+    </div>
+    <div class="intro__item intro__ab4">
+      <img src="./web/images/ab4.jpg" alt="ab4.jpg" />
+    </div>
+  </section>
+  <!-- END INTRO  -->
+
+  <!-- START NUMBER  -->
+  <section class="number">
+    <div class="number__content">
+      <div class="number__content-item">
+        <p class="counter">3500</p>
+        <p>Coffee</p>
+      </div>
+      <div class="number__content-item">
+        <p class="counter">650</p>
+        <p>Happy Client</p>
+      </div>
+      <div class="number__content-item">
+        <p class="counter">10</p>
+        <p>Experience</p>
+      </div>
+      <div class="number__content-item">
+        <p class="counter">1010</p>
+        <p>Expert Worker</p>
+      </div>
+    </div>
+  </section>
+  <!-- END NUMBER  -->
+
+  <!-- START SERVICE -->
+  <section class="service">
+    <h3 class="commonstyle">OUR SERVICES</h3>
+    <div class="service__content">
+      <div class="service__content-item">
+        <i class="fa fa-adjust ilogo hover"></i>
+        <h4>Tasty Cakes</h4>
+        <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+        <button>Learn more</button>
+      </div>
+      <div class="service__content-item">
+        <i class="fa fa-snowflake ilogo hover"></i>
+        <h4>Creativity</h4>
+        <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+        <button>Learn more</button>
+      </div>
+      <div class="service__content-item">
+        <i class="fa fa-chart-pie ilogo hover"></i>
+        <h4>Tradition</h4>
+        <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+        <button>Learn more</button>
+      </div>
+      <div class="service__content-item">
+        <i class="fab fa-slideshare ilogo hover"></i>
+        <h4>Quality</h4>
+        <p>delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+        <button>Learn more</button>
+      </div>
+    </div>
+  </section>
+  <!-- END SERVICE  -->
+
+  <!-- START GALLERY -->
+  <section class="gallery">
+    <h3 class="commonstyle">OUR GALLERY</h3>
+    <div class="gallery__content">
+      <!-- thẻ figure chuyên dùng cho phần hình ảnh của html5 -->
+      <figure class="gallery__item gallery__g1">
+        <a href="./web/images/g1.jpg" data-lightbox="gallery">
+          <img src="./web/images/g1.jpg" alt="g1.jpg">
           <figcaption class="gallery__overlay">
             <h2><span>OUR</span>GALLERY</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </figcaption>
-          </a>         
-        </figure>
+        </a>
+      </figure>
 
-        <figure class="gallery__item">
-          <a href="./web/images/g2.jpg" data-lightbox="gallery">
-            <img src="./web/images/g2.jpg" alt="g2.jpg">
-            <figcaption class="gallery__overlay">
-              <h2><span>OUR</span>GALLERY</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
-          </a>
-        </figure>
+      <figure class="gallery__item">
+        <a href="./web/images/g2.jpg" data-lightbox="gallery">
+          <img src="./web/images/g2.jpg" alt="g2.jpg">
+          <figcaption class="gallery__overlay">
+            <h2><span>OUR</span>GALLERY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
 
-        <figure class="gallery__item">
-          <a href="./web/images/g3.jpg" data-lightbox="gallery">
-            <img src="./web/images/g3.jpg" alt="g3.jpg">
-            <figcaption class="gallery__overlay">
-              <h2><span>OUR</span>GALLERY</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
-          </a>
-        </figure>
+      <figure class="gallery__item">
+        <a href="./web/images/g3.jpg" data-lightbox="gallery">
+          <img src="./web/images/g3.jpg" alt="g3.jpg">
+          <figcaption class="gallery__overlay">
+            <h2><span>OUR</span>GALLERY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
 
-        <figure class="gallery__item">
-          <a href="./web/images/g4.jpg" data-lightbox="gallery">
-            <img src="./web/images/g4.jpg" alt="g4.jpg">
-            <figcaption class="gallery__overlay">
-              <h2><span>OUR</span>GALLERY</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
-          </a>
-        </figure>
+      <figure class="gallery__item">
+        <a href="./web/images/g4.jpg" data-lightbox="gallery">
+          <img src="./web/images/g4.jpg" alt="g4.jpg">
+          <figcaption class="gallery__overlay">
+            <h2><span>OUR</span>GALLERY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
 
-        <figure class="gallery__item">
-          <a href="./web/images/g5.jpg" data-lightbox="gallery">
-            <img src="./web/images/g5.jpg" alt="g5.jpg">
-            <figcaption class="gallery__overlay">
-              <h2><span>OUR</span>GALLERY</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
-          </a>
-        </figure>
+      <figure class="gallery__item">
+        <a href="./web/images/g5.jpg" data-lightbox="gallery">
+          <img src="./web/images/g5.jpg" alt="g5.jpg">
+          <figcaption class="gallery__overlay">
+            <h2><span>OUR</span>GALLERY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
 
-        <figure class="gallery__item gallery__g6">
-          <a href="./web/images/g6.jpg" data-lightbox="gallery">
-            <img src="./web/images/g6.jpg" alt="g6.jpg">
-            <figcaption class="gallery__overlay">
-              <h2><span>OUR</span>GALLERY</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </figcaption>
-          </a>
-        </figure>
+      <figure class="gallery__item gallery__g6">
+        <a href="./web/images/g6.jpg" data-lightbox="gallery">
+          <img src="./web/images/g6.jpg" alt="g6.jpg">
+          <figcaption class="gallery__overlay">
+            <h2><span>OUR</span>GALLERY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
 
+    </div>
+
+  </section>
+  <!-- END GALLERY -->
+
+  <!-- START TEAM -->
+  <section class="team">
+    <h3 class="commonstyle">BAKE TEAM</h3>
+    <div class="team__content">
+      <figure class="team__content-item">
+        <img src="./web/images/t1.jpg" alt="t1.jpg">
+        <figcaption class="team__name">
+          <h2>John Simon</h2>
+          <p>-Cake Maker</p>
+        </figcaption>
+        <figcaption class="team__detail">
+          <h2>John Simon</h2>
+          <p>-Cake Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="team__content-item">
+        <img src="./web/images/t2.jpg" alt="t2.jpg">
+        <figcaption class="team__name">
+          <h2>Max Will</h2>
+          <p>-Coffee Maker</p>
+        </figcaption>
+        <figcaption class="team__detail">
+          <h2>Max Will</h2>
+          <p>-Coffee Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="team__content-item">
+        <img src="./web/images/t3.jpg" alt="t3.jpg">
+        <figcaption class="team__name">
+          <h2>Rose Murphy</h2>
+          <p>-Staff Manager</p>
+        </figcaption>
+        <figcaption class="team__detail">
+          <h2>Rose Murphy</h2>
+          <p>-Staff Manager</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="team__content-item">
+        <img src="./web/images/t4.jpg" alt="t4.jpg">
+        <figcaption class="team__name">
+          <h2>Barbara Will</h2>
+          <p>-Cake Maker</p>
+        </figcaption>
+        <figcaption class="team__detail">
+          <h2>Barbara Will</h2>
+          <p>-Cake Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="team__content-item">
+        <img src="./web/images/t1.jpg" alt="t1.jpg">
+        <figcaption class="team__name">
+          <h2>Derek Bybee</h2>
+          <p>-Coffee Maker</p>
+        </figcaption>
+        <figcaption class="team__detail">
+          <h2>Derek Bybee</h2>
+          <p>-Coffee Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="team__content-item">
+        <img src="./web/images/t2.jpg" alt="t2.jpg">
+        <figcaption class="team__name">
+          <h2>Lucille Webster</h2>
+          <p>-Staff Manager</p>
+        </figcaption>
+        <figcaption class="team__detail">
+          <h2>Lucille Webster</h2>
+          <p>-Staff Manager</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <!-- <section class="team">
+    <h3 class="commonstyle">BAKE TEAM</h3>
+    <div class="team__content">
+      <div class="team__content-item">
+        <img src="./web/images/t1.jpg" alt="t1.jpg">
+        <div class="team__name">
+          <h2>John Simon</h2>
+          <p>-Cake Maker</p>
+        </div>
+        <div class="team__detail">
+          <h2>John Simon</h2>
+          <p>-Cake Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
       </div>
 
-    </section>
-    <!-- END GALLERY -->
+      <div class="team__content-item">
+        <img src="./web/images/t2.jpg" alt="t2.jpg">
+        <div class="team__name">
+          <h2>Max Will</h2>
+          <p>-Coffee Maker</p>
+        </div>
+        <div class="team__detail">
+          <h2>Max Will</h2>
+          <p>-Coffee Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
 
-    <!-- Thư viện hỗ trợ jquery giúp chạy hiệu ứng của các thư viện animation-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <div class="team__content-item">
+        <img src="./web/images/t3.jpg" alt="t3.jpg">
+        <div class="team__name">
+          <h2>Rose Murphy</h2>
+          <p>-Staff Manager</p>
+        </div>
+        <div class="team__detail">
+          <h2>Rose Murphy</h2>
+          <p>-Staff Manager</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
 
-    <!-- Jquery waypoint, vị trí của waypoint bắt buộc phải để ngay bên dưới của Jquery, tại vì waypoint sẽ sử dụng các code, hàm được tạo ra bởi jquery phía trên  -->
+      <div class="team__content-item">
+        <img src="./web/images/t4.jpg" alt="t4.jpg">
+        <div class="team__name">
+          <h2>Barbara Will</h2>
+          <p>-Cake Maker</p>
+        </div>
+        <div class="team__detail">
+          <h2>Barbara Will</h2>
+          <p>-Cake Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
 
-    <script src="./web/js/jquery.waypoints.min.js"></script>
+      <div class="team__content-item">
+        <img src="./web/images/t1.jpg" alt="t1.jpg">
+        <div class="team__name">
+          <h2>Derek Bybee</h2>
+          <p>-Coffee Maker</p>
+        </div>
+        <div class="team__detail">
+          <h2>Derek Bybee</h2>
+          <p>-Coffee Maker</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
 
-    <!-- Import hàm count up, vị trí bắt buộc phải nằm bên dưới waypoint và jquery, vì countup sẽ sử dụng hàm của cả 2 thư viện phía trên, nên nếu để ở trên thì sẽ bị lỗi hàm chưa được khởi tạo  -->
+      <div class="team__content-item">
+        <img src="./web/images/t2.jpg" alt="t2.jpg">
+        <div class="team__name">
+          <h2>Lucille Webster</h2>
+          <p>-Staff Manager</p>
+        </div>
+        <div class="team__detail">
+          <h2>Lucille Webster</h2>
+          <p>-Staff Manager</p>
+          <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+          <div class="team__icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- END TEAM -->
+<!-- START TESTIMONIALS HTML -->
+<section class="testimonials">
+  <h3 class="commonstyle">TESTIMONIALS</h3>
+  <div class="testimonials__content">
+    <div class="owl-carousel">
+      <div class="item">
+        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i class="fa fa-quote-right"></i>
+        </p>
+        <p>ALLYI</p>
+      </div>
+      <div class="item">
+        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i class="fa fa-quote-right"></i>
+        </p>
+      <p>WILLSON</p>
+      </div>
+      <div class="item">
+        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia neque porro provident totam perspiciatis numquam magnam laudantium error impedit. <i class="fa fa-quote-right"></i>
+        </p>
+        <p>MAX</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END TESTIMONIALS HTML -->
 
-    <script src="./web/js/jquery.countup.js"></script>
+  <!-- Thư viện hỗ trợ jquery giúp chạy hiệu ứng của các thư viện animation, đối với 1 trang web chỉ cần cài 1 thư viện jquery thôi-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script>
-      $(".counter").countUp();
-    </script>
-    <!-- LIGHTBOX JS để tạo hiệu ứng chuyển hình pop-up -->
-    <script src="./web/js/lightbox-plus-jquery.min.js"></script>
+  <!-- Jquery waypoint, vị trí của waypoint bắt buộc phải để ngay bên dưới của Jquery, tại vì waypoint sẽ sử dụng các code, hàm được tạo ra bởi jquery phía trên  -->
 
-  </body>
+  <script src="./web/js/jquery.waypoints.min.js"></script>
+
+  <!-- Import hàm count up, vị trí bắt buộc phải nằm bên dưới waypoint và jquery, vì countup sẽ sử dụng hàm của cả 2 thư viện phía trên, nên nếu để ở trên thì sẽ bị lỗi hàm chưa được khởi tạo  -->
+
+  <script src="./web/js/jquery.countup.js"></script>
+
+  <script>
+    $(".counter").countUp();
+  </script>
+  <!-- LIGHTBOX JS để tạo hiệu ứng chuyển hình pop-up -->
+  <script src="./web/js/lightbox-plus-jquery.min.js"></script>
+
+  <!-- OWL CAROUSEL JS  -->
+  <script src="./web/js/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true, 
+    autoplayTimeout:1000
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  </script>
+
+</body>
+
 </html>
