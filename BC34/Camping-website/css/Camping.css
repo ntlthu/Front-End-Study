@@ -6,12 +6,17 @@
 body {
   background-color: #faf4f2;
 }
-.clearfix{
-    clear: both;
+.clearfix {
+  clear: both;
 }
 .header {
   background-color: #f8e1db;
   padding: 10px 30px;
+  /* cố định header thì dùng:  */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  /* z-index chỉ đi với position thôi, ko có position thì z-index ko có ý nghĩa gì hết, z-index càng cao thì độ ưu tiên càng lớn, thằng nào có z-index càng cao thì nó sẽ đè lên thằng kia */
 }
 
 .header .logo img {
@@ -74,16 +79,32 @@ body {
   border-radius: 30px;
   text-align: center;
 }
-
+.activity .main .item .thumbnail {
+  position: relative;
+}
 .activity .main .item .thumbnail img {
   width: 100%;
   border-radius: 30px;
+}
+
+.activity .main .item .thumbnail i {
+  color: #ff0000;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  line-height: 45px;
 }
 
 .activity .main .item h1 {
   font-size: 25px;
   margin-top: 15px;
 }
+
 .activity .main .item p {
   font-size: 17px;
   color: #8d8d8d;
@@ -102,3 +123,5 @@ body {
   border-radius: 30px;
   margin-top: 15px;
 }
+
+/* Control + D, hoặc command D để tìm chỗ có phần tử giống nhau và dùng đa trỏ để change */
