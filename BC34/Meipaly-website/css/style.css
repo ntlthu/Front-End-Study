@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  max-width: 1280px;
+  background-color: rgb(123, 241, 123);
+  /* max-width và width khác nhau, gắn max-width để khi màn hình vượt to qúa mức 1280px thì nó ko to nữa, còn nếu màn hình nhỏ thì nó sẽ chỉnh theo kích thước màn hình, ko sinh ra thanh cuộn ngang, kích thước của container bắt buộc phải set cứng, ko dùng phần % */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header .logo {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.header .navbar a{
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 30px;
+    /* text-transform: ; dùng để chỉnh chữ hoa, chữ thường, thay vì phải gõ trong html*/
+}
