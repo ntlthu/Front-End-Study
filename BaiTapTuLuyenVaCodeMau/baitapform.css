@@ -31,3 +31,7 @@ html,body{
     width: 100%;
     padding: 10px 0;
 }
+
+.news__right-text-span1::after{
+    border-right: 1px solid gray;
+}
