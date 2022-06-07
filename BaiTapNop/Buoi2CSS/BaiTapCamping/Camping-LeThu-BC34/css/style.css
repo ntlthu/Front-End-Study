@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf4f2;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.header {
+  background-color: #f8e1db;
+  padding: 10px 30px;
+  /* cố định header thì dùng:  */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  /* z-index chỉ đi với position thôi, ko có position thì z-index ko có ý nghĩa gì hết, z-index càng cao thì độ ưu tiên càng lớn, thằng nào có z-index càng cao thì nó sẽ đè lên thằng kia */
+}
+
+.header .logo img {
+  width: 60px;
+}
+
+.header .navbar a {
+  color: #3a3735;
+  text-decoration: none;
+  /* font-size của text mặc định luôn luôn là 16px */
+  font-size: 20px;
+  font-weight: normal;
+  margin-right: 30px;
+}
+
+.header .navbar a:hover {
+  color: #ff0000;
+}
+
+.carousel {
+  background-image: url(../img/BG.png);
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.activity {
+  padding: 80px 0;
+}
+
+.activity .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.activity .title h2 {
+  color: #8d8d8d;
+  font-size: 40px;
+}
+
+.activity .main .row .col {
+  float: left;
+  width: calc(100% / 4);
+  padding: 0 15px;
+}
+
+.activity .main .item {
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.activity .main .item .thumbnail {
+  position: relative;
+}
+
+.activity .main .item .thumbnail img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.activity .main .item .thumbnail i {
+  color: #ff0000;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  line-height: 45px;
+}
+
+.activity .main .item h1 {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.activity .main .item p {
+  font-size: 17px;
+  color: #8d8d8d;
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+.activity .main .item a {
+  background-color: #e8e8e8;
+  display: inline-block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #8d8d8d;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.activity .main .item a:hover {
+  background-color: #f14b21;
+  color: #e8e8e8;
+}
+
+.activity .main{
+  text-align: center;
+}
+.main .btn {
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid tomato;
+  color: #f14b21;
+  margin-top: 25px;
+  min-width: 150px;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #f14b21;
+  color: #e8e8e8;
+}
+
+.contact{
+  margin-bottom: 80px;
+  border-radius: 20px;
+  background-color: #f8e1db;
+}
+.contact__left,.contact__right,.contact__right-contentapp,.contact__right-contentIcon{
+  float: left;
+  width: 50%;
+}
+.contact__left{
+  background-image: url(../img/mask.png);
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact__left img{
+  padding: 20px 0 20px 170px;
+}
+
+.contact__right{
+  padding: 70px 50px;
+  color: #81807f;
+}
+.contact__right-title{
+  margin-bottom: 20px;
+}
+
+.contact__right-title h2{
+  font-size: 32px;
+}
+
+.contact__right-contentapp h3,.contact__right-contentIcon h3,.contact__right-title h2{
+  margin-bottom: 15px;
+}
+
+.contact__right-contentIcon i{
+  color: #e76f51;
+  padding-right: 5px;
+}
+
+.footer{
+  color: #474644;
+  background-color: #F8E1DB;
+  border-radius: 80px 80px 0 0;
+}
+.footer h4{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.footer__left,.footer__right,.footer__right-item{
+  float: left;
+}
+.footer__left{
+  width: 40%;
+  padding: 100px 55px;
+}
+.footer__left p{
+  line-height: 27px;
+}
+.footer__right{
+  width: 60%;
+  padding: 100px 0px 30px;
+}
+.footer__right-item{
+  width: calc(100% / 3);
+}
+.footer__right-item li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footer__right-item a{
+  text-decoration: none;
+  color: #5A534F;
+}
+.footer__bottom{
+  text-align: center;
+  padding-bottom: 50px;
+}
+.footer__right-item a:hover{
+  color: #f8481c;
+}
