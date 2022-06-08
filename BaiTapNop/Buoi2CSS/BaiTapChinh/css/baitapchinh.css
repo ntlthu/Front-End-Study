@@ -270,6 +270,7 @@ li {
     background-color: #fdc800;
     padding: 20px 0px;
     border-radius: 5px 5px 0 0;
+    width: 100px;
 }
 
 .calender .cld__md h2 {
