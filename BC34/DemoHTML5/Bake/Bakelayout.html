@@ -503,18 +503,30 @@
 
   <!-- START FORM CONTACT -->
   <section class="form">
-    <form action="">
-      <h3>CONTACT</h3>
+    <h3>CONTACT</h3>
+    
       <div class="form__content">
-        <input class="common" type="text" placeholder="Name">
+        <form action="">
+          <input class="common" type="text" placeholder="Name">
         <input class="common" type="text" placeholder="Last Name">
         <input class="common" type="email" name="email" id="email" placeholder="Email">
         <input class="common" type="tel" name="tel" id="tel" placeholder="Phone">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" value="Send">
+        </form>
       </div>
-    </form>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.124465676279!2d106.71933221440916!3d10.801778092304312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752906bc2523db%3A0xe5ec0cfc2c5efa44!2zMTE3IMSQLiBUw6JuIEPhuqNuZywgUGjGsOG7nW5nIDI1LCBCw6xuaCBUaOG6oW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1654782163439!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
   </section>
+
   <!-- END FORM CONTACT -->
+
+  <a class="backToTop" href="#">
+    <i class="fa fa-angle-up"></i>
+  </a>
 
   <!-- Thư viện hỗ trợ jquery giúp chạy hiệu ứng của các thư viện animation, đối với 1 trang web chỉ cần cài 1 thư viện jquery thôi-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -555,6 +567,9 @@
       }
     })
   </script>
+
+  <script src="../Bake/web/js/move-top.js"></script>
+  <!--xem thư viện backtotop  -->
 
 </body>
 

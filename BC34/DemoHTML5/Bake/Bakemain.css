@@ -11,6 +11,9 @@ html {
     ví dụ của trường hợp này 1 rem = 16px */
   font-size: 62.5%;
   /* set font-size 62.5% để dễ chuyển đổi đơn vị từ px sang rem, 62.5% sẽ tương đương = 10px, như vậy 1rem =10px, thì 12px = 1.2rem */
+  /* ĐỂ LÀM CHO WEBSITE ĐƯỢC TRƯỢT MƯỢT MÀ THÌ THÊM THUỘC TÍNH SAU: 
+  scroll-behavior: smooth */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -516,3 +519,55 @@ element.style {
   text-align: center;
 }
 /* Thuộc tính "disabled" có thể sử dụng ở các thẻ như thẻ a, thẻ button, giúp cho người dùng không click vào đc link đó hoặc button đó */
+.form .form__content form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px 35px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.form .form__content textarea{
+  grid-column: 1 / span 2;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  resize: none;
+}
+.form .form__content textarea::placeholder{
+  color: black;
+}
+.form .form__content input:last-of-type {
+  grid-column: 1 / span 2;
+  background-color: #ff0e83;
+}
+
+.form .form__content input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.map iframe {
+  width: 100%;
+}
+.backToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.backToTop i {
+  color: #0bbbcc;
+  border: 2px solid #0bbbcc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 32px;
+}

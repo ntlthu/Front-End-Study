@@ -6,17 +6,26 @@
 }
 .container {
   max-width: 1280px;
-  background-color: rgb(123, 241, 123);
+  /* background-color: rgb(123, 241, 123); hoặc có thể cho background-color = transparent*/
   /* max-width và width khác nhau, gắn max-width để khi màn hình vượt to qúa mức 1280px thì nó ko to nữa, còn nếu màn hình nhỏ thì nó sẽ chỉnh theo kích thước màn hình, ko sinh ra thanh cuộn ngang, kích thước của container bắt buộc phải set cứng, ko dùng phần % */
   margin: 0 auto;
-  padding: 0 15px;
 }
+
 a {
   text-decoration: none;
 }
 
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 100%;
+}
+.header__container {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
 .header .logo {
@@ -25,9 +34,67 @@ a {
   font-weight: 600;
 }
 
-.header .navbar a{
-    color: #ffffff;
-    font-size: 18px;
-    margin-right: 30px;
-    /* text-transform: ; dùng để chỉnh chữ hoa, chữ thường, thay vì phải gõ trong html*/
+.header .navbar a {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 30px;
+  transition: 0.3s;
+  /* text-transform: ; dùng để chỉnh chữ hoa, chữ thường, thay vì phải gõ trong html*/
 }
+.navbar a.active {
+  color: #e62b4a;
+}
+
+.navbar a:hover {
+  color: #e62b4a;
+}
+
+/* START CAROUSEL */
+.carousel {
+  background-image: url(../image-video/home_slider.jpg);
+  height: 80vh;
+  /* vh là đơn vị chiều cao tương ứng với màn hình mà user đang dùng, có giá trị như % */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.carousel__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* có thể set width, height cũng được, có thể không set cũng đc, hoặc có thể set width, height = max-content */
+}
+
+.carousel__content p {
+  font-size: 30px;
+}
+
+.carousel__content h2 {
+  margin: 20px 0;
+  font-size: 50px;
+}
+
+.carousel__content button {
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #e62b4a;
+  border: none;
+  font-size: 24px;
+}
+
+.carousel__content i {
+  font-size: 30px;
+}
+/* END CAROUSEL */
+
+/* Service */
+/* dùng slick js để làm hiệu ứng cho phần service_carousel : , tốt nhất là copy code của thư viện bỏ vào html, copy phần code của getting start, xong rồi DL thư viện về giải nén và copy vào folder dự án của mình*/
+
+/* end service */

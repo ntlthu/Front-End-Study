@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meipaly</title>
+    <title>Meipaly-Lethu-BC34</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,19 +17,23 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- slick css -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- 1 -->
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <a href="#" class="logo">
           <i class="fab fa-atlassian"></i>
-          <span>meipaly</span>
+          <span>Meipaly</span>
         </a>
 
         <nav class="navbar">
-          <a href="#">HOME</a>
+          <a class="active" href="#">HOME</a>
           <a href="#">SERVICE</a>
           <a href="#">SHOWCASE</a>
           <a href="#">BLOG</a>
@@ -39,9 +43,32 @@
       </div>
     </header>
     <!-- 2 -->
-    <section class="carousel"></section>
+    <section class="carousel">
+      <div class="carousel__content">
+        <p>WELCOME TO MEIPALY AGENCY</p>
+        <h2>
+          SMART WEB <br />
+          DESIGN AGENCY
+        </h2>
+        <button>READ MORE</button>
+        <i class="fa fa-angle-down"></i>
+      </div>
+    </section>
     <!-- 3 -->
-    <section class="service"></section>
+    <section class="service">
+      <div class="container">
+        <div class="service__title"></div>
+        <div class="service__carousel">
+          <div class="carousel__item">item</div>
+          <div class="carousel__item">item</div>
+          <div class="carousel__item">item</div>
+          <div class="carousel__item">item</div>
+          <div class="carousel__item">item</div>
+          <div class="carousel__item">item</div>
+          <div class="carousel__item">item</div>
+        </div>
+      </div>
+    </section>
     <!-- 4 -->
     <section class="news"></section>
     <!-- 5 -->
@@ -52,5 +79,25 @@
     <section class="contact"></section>
     <!-- 8 -->
     <footer class="footer"></footer>
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick -->
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".service__carousel").slick({
+          // setting-name: setting-value
+          infinite: true,
+          slidesToShow: 6,
+          slidesToScroll: 3,
+        });
+      });
+    </script>
   </body>
 </html>
