@@ -113,7 +113,7 @@ body {
 }
 .activity .main .item a {
   background-color: #e8e8e8;
-  /* đặc tính của thẻ inline là ko dùng padding được, không dùng margin được,  */
+  /* đặc tính của thẻ inline là: không text-align: center được,ko chỉnh kích thước lại cho nó được, ko dùng padding được, không dùng margin trên dưới được, chỉ xài được margin 2 bên thôi  */
   /* padding: 10px 40px; ko dùng padding được, vì a là thẻ inline, mặc định kích thước của nó là text, dùng padding thì nó sẽ che mất các phần tử khác*/
   /* display: block; ko dùng được vì kích thước nó chiếm 100% và nó ko còn canh giữa nữa, vậy nên dùng :inline-block;*/
   display: inline-block;
