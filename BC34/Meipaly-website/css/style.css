@@ -96,5 +96,106 @@ a {
 
 /* Service */
 /* dùng slick js để làm hiệu ứng cho phần service_carousel : , tốt nhất là copy code của thư viện bỏ vào html, copy phần code của getting start, xong rồi DL thư viện về giải nén và copy vào folder dự án của mình*/
+.service {
+  padding: 80px 0;
+  background: black;
+}
 
+.carousel__item {
+  height: 250px;
+  padding: 10px;
+}
+.carousel__item .item__container {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+}
+
+.carousel__item .item__container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0px;
+  width: 5px;
+  background: red;
+  right: 0;
+  top: 0;
+  transition: 0.3s;
+}
+
+.carousel__item .item__container:hover::before {
+  height: 100%;
+  /* hoặc dùng translate Y
+  cách 1: thẻ cha height: 0px, thẻ hover: height 100%
+  cách 2: dùng transform: translate Y */
+}
+
+/* muốn mất 2 cái dấu mũi tên 2 bên thì vào inspect và xem nó là css gì thì display: none là nó mất, hoặc vào đoạn scrip dưới js thêm vào arrows: false */
 /* end service */
+
+.slick-dots li button::before {
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+}
+.slick-dots li.slick-active button::before {
+  color: #ffffff;
+  opacity: 1;
+}
+/* luôn để thẻ active ở phía sau để nó ghi đè code */
+
+/* NEWS */
+.news {
+  padding: 80px 0;
+}
+.news__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  /* aspect-ratio: 1 / 1; */
+}
+
+.news__item .item__overlay {
+  opacity: 0;
+  background-color: rgba(230, 43, 74, 0.6);
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+}
+
+.item__overlay .search {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: white;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+.news__item .item__overlay:hover {
+  opacity: 1;
+}
+.news__item .item__overlay:hover .search {
+  top: 20px;
+}
+.news__item-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background: #ffffff;
+}
+
+.news__item-10 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
