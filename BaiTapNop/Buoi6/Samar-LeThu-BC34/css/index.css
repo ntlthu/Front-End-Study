@@ -44,10 +44,12 @@ li {
   color: #fff;
   cursor: pointer;
   display: block;
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   transition: all 0.5s;
   background-size: 200%;
 }
@@ -180,10 +182,12 @@ h2.h2-common {
   color: #fff;
   border-radius: 3.5rem;
   font-weight: 900;
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   margin-right: 10px;
 }
@@ -330,10 +334,12 @@ h3.h3-common {
   display: inline-block;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   color: #fff;
 }
@@ -385,10 +391,12 @@ h3.h3-common {
 
 .features_bg::after {
   content: "";
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   position: absolute;
   top: 0;
@@ -430,11 +438,13 @@ h3.h3-common {
 }
 .features__item div {
   z-index: 1;
-  transition: all 1s
+  transition: all 1s;
 }
 
-.features_bg:hover div,.features_bg:hover h3,.features_bg:hover i {
-  color: #fff
+.features_bg:hover div,
+.features_bg:hover h3,
+.features_bg:hover i {
+  color: #fff;
 }
 
 .features__right {
@@ -452,16 +462,48 @@ h3.h3-common {
 
 @keyframes rotate {
   0% {
-    transform: rotate(1.5deg) translate(2px, 2px)
+    transform: rotate(1.5deg) translate(2px, 2px);
   }
 
   50% {
-    transform: rotate(-1.5deg) translate(-2px, -2px)
+    transform: rotate(-1.5deg) translate(-2px, -2px);
   }
 
   100% {
-    transform: rotate(1.5deg) translate(2px, 2px)
+    transform: rotate(1.5deg) translate(2px, 2px);
   }
 }
 
-/* END FEATURES */
+/* PORTFOLIO */
+.portfolio {
+  text-align: center;
+}
+
+.portfolio__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.portfolio__item-1 {
+  grid-column: 1 / span 2;
+}
+
+.portfolio__item-2 {
+  grid-column: 3 / span 2;
+}
+
+.portfolio__item-5 {
+  grid-column: 1 / span 2;
+}
+
+.portfolio__item-6 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
