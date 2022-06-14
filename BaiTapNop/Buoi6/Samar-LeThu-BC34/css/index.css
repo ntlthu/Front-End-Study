@@ -481,25 +481,18 @@ h3.h3-common {
 
 .portfolio__content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 
-.portfolio__item-1 {
+.portfolio__childgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.portfolio__childgrid .portfolio__item-5 {
   grid-column: 1 / span 2;
-}
-
-.portfolio__item-2 {
-  grid-column: 3 / span 2;
-}
-
-.portfolio__item-5 {
-  grid-column: 1 / span 2;
-}
-
-.portfolio__item-6 {
-  grid-column: 3 / span 2;
-  grid-row: 3 / span 2;
 }
 
 .portfolio__item img {
