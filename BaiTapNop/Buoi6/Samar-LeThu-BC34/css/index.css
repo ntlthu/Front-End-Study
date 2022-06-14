@@ -44,12 +44,10 @@ li {
   color: #fff;
   cursor: pointer;
   display: block;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   transition: all 0.5s;
   background-size: 200%;
 }
@@ -98,14 +96,17 @@ li {
 .header .header__content a:hover span {
   animation: upToDown 0.3s forwards;
 }
+
 @keyframes upToDown {
   49% {
     transform: translateY(100%);
   }
+
   50% {
     opacity: 0;
     transform: translateY(-100%);
   }
+
   51% {
     opacity: 1;
   }
@@ -179,12 +180,10 @@ h2.h2-common {
   color: #fff;
   border-radius: 3.5rem;
   font-weight: 900;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   margin-right: 10px;
 }
@@ -202,6 +201,7 @@ h2.h2-common {
   max-width: 100%;
   display: block;
 }
+
 /* SERVICE CSS */
 .service {
   text-align: center;
@@ -229,6 +229,7 @@ h2.h2-common {
 .service__item:hover {
   transform: translateY(-2rem);
 }
+
 .service__item img {
   width: 215px;
 }
@@ -329,12 +330,10 @@ h3.h3-common {
   display: inline-block;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) -100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   color: #fff;
 }
@@ -345,7 +344,124 @@ h3.h3-common {
   font-weight: 800;
   line-height: 1;
 }
+
 .countUp__item p:last-of-type {
   font-size: 1.8rem;
   color: var(--heading-text);
 }
+
+/* FEATURES CSS */
+.features {
+  background-image: url(../img/bg2.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 11.5rem;
+}
+
+.features__content {
+  display: flex;
+  position: relative;
+}
+
+.features__left,
+.features__right {
+  width: 50%;
+}
+
+.features__item {
+  padding: 0 5rem 3rem 0;
+}
+
+.features_bg {
+  box-shadow: 0 0 6rem 0 rgb(0 0 0 / 10%);
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.features_bg::after {
+  content: "";
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
+  background-size: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s;
+  border-radius: 1rem;
+}
+
+.features_bg:hover::after {
+  opacity: 1;
+}
+
+.features__item--2 {
+  padding: 0 0 3rem 5rem;
+}
+
+.features__item i {
+  font-size: 8rem;
+  line-height: 1;
+  color: #f55f8d;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.features__item-text p {
+  font-size: 1.6rem;
+}
+
+.features__item-text {
+  padding-left: 2.5rem;
+}
+
+.features__item-text .h3-common {
+  margin: 0 0;
+  transition: all 1s;
+}
+.features__item div {
+  z-index: 1;
+  transition: all 1s
+}
+
+.features_bg:hover div,.features_bg:hover h3,.features_bg:hover i {
+  color: #fff
+}
+
+.features__right {
+  position: absolute;
+  visibility: visible;
+  width: 60%;
+  top: -3%;
+  right: -10%;
+}
+
+.features__right img {
+  max-width: 100%;
+  animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(1.5deg) translate(2px, 2px)
+  }
+
+  50% {
+    transform: rotate(-1.5deg) translate(-2px, -2px)
+  }
+
+  100% {
+    transform: rotate(1.5deg) translate(2px, 2px)
+  }
+}
+
+/* END FEATURES */
