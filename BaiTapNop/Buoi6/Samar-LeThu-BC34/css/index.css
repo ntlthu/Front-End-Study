@@ -44,12 +44,10 @@ li {
   color: #fff;
   cursor: pointer;
   display: block;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   transition: all 0.5s;
   background-size: 200%;
 }
@@ -182,12 +180,10 @@ h2.h2-common {
   color: #fff;
   border-radius: 3.5rem;
   font-weight: 900;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   margin-right: 10px;
 }
@@ -334,12 +330,10 @@ h3.h3-common {
   display: inline-block;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   color: #fff;
 }
@@ -391,12 +385,10 @@ h3.h3-common {
 
 .features_bg::after {
   content: "";
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   position: absolute;
   top: 0;
@@ -436,6 +428,7 @@ h3.h3-common {
   margin: 0 0;
   transition: all 1s;
 }
+
 .features__item div {
   z-index: 1;
   transition: all 1s;
@@ -477,26 +470,122 @@ h3.h3-common {
 /* PORTFOLIO */
 .portfolio {
   text-align: center;
+  background-image: url(../img/bg17.png);
+  background-size: cover;
+  background-position: top center;
+  padding-top: 11.5rem;
 }
 
 .portfolio__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr) 1.5fr;
+  gap: 3.5rem;
 }
 
-.portfolio__childgrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+.portfolio__item-1 {
+  grid-column: 1/span 2;
 }
 
-.portfolio__childgrid .portfolio__item-5 {
+.portfolio__item-6 {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+.portfolio__item-5 {
   grid-column: 1 / span 2;
+}
+
+.portfolio__item {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .portfolio__item img {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  opacity: 0;
+  transition: all .75s;
+}
+
+.portfolio__overlay:hover {
+  opacity: 1;
+}
+
+.portfolio__icon {
+  font-size: 2.8rem;
+  text-decoration: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  background-size: 200%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .75s
+}
+
+.portfolio__icon a i {
+  color: #fff;
+}
+
+.portfolio__overlay:hover .portfolio__icon {
+  transform: translate(-2rem, 2rem);
+}
+
+.portfolio__text {
+  text-align: left;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  transform: translateY(9rem);
+  transition: all .75s
+}
+
+.portfolio__overlay:hover .portfolio__text {
+  transform: translateY(0);
+}
+
+.portfolio__text h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.portfolio__text p {
+  color: #fff;
+  font-size: 1.6rem;
+  opacity: .7;
+}
+
+/* Hiệu ứng light effect (vệt sáng) */
+.portfolio__item::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  /* nhớ khai position: relative; cho thẻ cha */
+  top: 0;
+  left: -100%;
+  display: block;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+  transform: skewX(-25deg);
+  transition: all .75s;
+}
+
+.portfolio__item:hover::before {
+  left: 125%;
 }
