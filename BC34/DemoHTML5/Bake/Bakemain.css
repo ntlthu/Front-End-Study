@@ -344,14 +344,13 @@ button:hover {
 }
 
 .gallery__item:hover .gallery__overlay p {
-    transform: translateY(0);
-    opacity: 1;
-
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .gallery__overlay h2 span {
-    font-weight: 300;
-  }
+  font-weight: 300;
+}
 
 .gallery__overlay h2 {
   transform: translateY(2rem);
@@ -360,8 +359,8 @@ button:hover {
 }
 
 .gallery__item:hover .gallery__overlay h2 {
-    transform: translateY(0);
-  }
+  transform: translateY(0);
+}
 /* những kiểu selector mới của CSS3 giúp tạo đường gạch ngang mà ko cần dùng thẻ hr */
 
 /* .gallery__overlay h2::before{
@@ -381,37 +380,36 @@ button:hover {
   opacity: 0;
 }
 
-.gallery__item:hover .gallery__overlay h2::after{
-    transform: translateY(0);
-    opacity: 1;
+.gallery__item:hover .gallery__overlay h2::after {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* Dùng thư viện animation lightbox js để hiện pop-up */
 /* Nhấn ctrl + F5 để clear cache */
 
 /* TEAM CSS  */
-.team{
+.team {
   background-color: #4e2a84;
 }
-.team h3{
+.team h3 {
   text-align: center;
   padding-top: 7rem;
 }
-.team__content{
+.team__content {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem 3rem;
 }
 
-.team__content-item{
+.team__content-item {
   position: relative;
 }
-.team__content-item img{
-width: 100%;
-display: block;
-
+.team__content-item img {
+  width: 100%;
+  display: block;
 }
 
 .team__name {
@@ -426,16 +424,18 @@ display: block;
   transition: all 1s;
 }
 
-.team__name h2, .team__detail h2{
+.team__name h2,
+.team__detail h2 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
 }
 
-.team__name p, .team__detail p{
+.team__name p,
+.team__detail p {
   font-size: 1.4rem;
   line-height: 2.8rem;
 }
-.team__detail{
+.team__detail {
   position: absolute;
   left: 0;
   top: 0;
@@ -452,16 +452,16 @@ display: block;
   color: #ff0e83;
 }
 
-.team__content-item:hover .team__name{
-opacity: 0;
+.team__content-item:hover .team__name {
+  opacity: 0;
 }
 
-.team__content-item:hover .team__detail{
-opacity: 1;
+.team__content-item:hover .team__detail {
+  opacity: 1;
 }
 
 /* TESTIMONIALS CSS */
-.testimonials{
+.testimonials {
   background-image: url(./web/images/cc1.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -469,11 +469,11 @@ opacity: 1;
   padding: 7rem 0;
 }
 
-.testimonials h3{
+.testimonials h3 {
   text-align: center;
   padding-top: 7rem;
 }
-.testimonials__content{
+.testimonials__content {
   width: 80%;
   margin: 0 auto;
   border: 3px solid #ff0e83;
@@ -482,61 +482,61 @@ opacity: 1;
   padding: 3.2rem;
 }
 
-.item p:first-of-type{
-font-size: 1.6rem;
-color: black;
-line-height: 3rem;
-letter-spacing: 0.3rem;
+.item p:first-of-type {
+  font-size: 1.6rem;
+  color: black;
+  line-height: 3rem;
+  letter-spacing: 0.3rem;
 }
-.item p:last-of-type{
+.item p:last-of-type {
   color: white;
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 15px;
   letter-spacing: 0.3rem;
 }
-.item p i{
+.item p i {
   color: #2cbeff;
   font-size: 3.3rem;
   padding: 0 1.8rem;
 }
 
-
 element.style {
 }
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-    filter: Alpha(Opacity=100);
-    opacity: 1;
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  opacity: 1;
 }
-
 
 /* Để tạo hiệu ứng cho phần TESTIMONIALS thì dùng thư viện Owl Carousel hoặc slick hoặc Swiper*/
 
 /* form css */
-.form h3{
+.form h3 {
   font-size: 5rem;
   padding: 7rem 0;
   text-align: center;
 }
 /* Thuộc tính "disabled" có thể sử dụng ở các thẻ như thẻ a, thẻ button, giúp cho người dùng không click vào đc link đó hoặc button đó */
-.form .form__content form{
+.form .form__content form {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px 35px;
   width: 75%;
   margin: 0 auto;
 }
 
-.form .form__content textarea{
+.form .form__content textarea {
   grid-column: 1 / span 2;
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 1.6rem;
   font-weight: 600;
+  /* thêm thuộc tính resize: none để bỏ thuộc tính ô input tự động chỉnh sửa size */
   resize: none;
 }
-.form .form__content textarea::placeholder{
+.form .form__content textarea::placeholder {
   color: black;
 }
 .form .form__content input:last-of-type {
