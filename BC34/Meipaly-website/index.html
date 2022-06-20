@@ -8,22 +8,23 @@
   <title>Meipaly-Lethu-BC34</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet" /> -->
 
   <!-- slick css -->
   <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- 1 -->
-  <header class="header">
+  <header class="header animate__animated animate__fadeInUp">
     <div class="container header__container">
       <a href="#" class="logo">
         <i class="fab fa-atlassian"></i>
@@ -38,6 +39,9 @@
         <a href="#">ABOUT US</a>
         <a href="#">CONTACT</a>
       </nav>
+      <button class="navbar-toggler">
+        <i class="fa fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
   <!-- 2 -->
@@ -103,7 +107,7 @@
     </div>
   </section>
   <!-- 4 -->
-  <section class="news">
+  <section class="news wow animate__animated animate__fadeInUp">
     <div class="container">
       <div class="news__title">
         <h4>OUR NEWS & ARTICLES</h4>
@@ -305,7 +309,9 @@
         <div class="contact__form">
           <form action="">
             <input type="text" placeholder="Username">
-            <input type="text" placeholder="Email address">
+            <input type="email" placeholder="Email address">
+            <!-- <input type="number">
+            <input type="file"> -->
             <textarea placeholder="Ask a Question"></textarea>
             <button>Submit</button>
           </form>
@@ -316,9 +322,7 @@
   <!-- 8 -->
   <footer class="footer"></footer>
 
-  <div class="demo_before_after">
-    <h2>helllo</h2>
-  </div>
+
 
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -346,11 +350,47 @@
         slidesToScroll: 5,
         arrows: false,
         dots: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+
+            }
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 4,
+
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
     });
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script> -->
 </body>
 
 </html>

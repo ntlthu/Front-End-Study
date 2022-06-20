@@ -1,8 +1,19 @@
+@font-face {
+  font-family: roboto;
+  /* roboto là tên tự đặt */
+  src: url(../Fonts/Roboto-Regular.ttf);
+}
+/* Nhược điểm của @font-face là cần font nào thì phải link thêm font đó vào, ví dụ đang link chỉ Regular, thì thuộc tính font-weight, sẽ không có tác dụng nữa */
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(../Fonts/Roboto-Bold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 .container {
@@ -10,6 +21,8 @@
   /* background-color: rgb(123, 241, 123); hoặc có thể cho background-color = transparent*/
   /* max-width và width khác nhau, gắn max-width để khi màn hình vượt to qúa mức 1280px thì nó ko to nữa, còn nếu màn hình nhỏ thì nó sẽ chỉnh theo kích thước màn hình, ko sinh ra thanh cuộn ngang, kích thước của container bắt buộc phải set cứng, ko dùng phần % */
   margin: 0 auto;
+  /* thêm padding để khi kéo màn hình nhỏ, phần nội dung ko bị ra sát mép rìa */
+  padding: 0 15px;
 }
 
 a {
@@ -20,8 +33,10 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   position: absolute;
   width: 100%;
+  /* khai animation-duration để đè code của thư viện animate */
+  animation-duration: 5s;
 }
-
+/* Trong css có thuộc tính đi chung với animation là animation-play-state: mặc định là running, là khi vào là nó chạy luôn, nên cần sử dụng thêm thư viện wowjs để cho khi lăn chuột gần tới phần đó là hiệu ứng mới bắt đầu chạy */
 .header__container {
   padding: 0 15px;
   display: flex;
@@ -35,7 +50,9 @@ a {
   font-size: 35px;
   font-weight: 600;
 }
-
+.header .logo span {
+  font-family: "roboto-bold", sans-serif;
+}
 .header .navbar a {
   color: #ffffff;
   font-size: 18px;
@@ -51,7 +68,14 @@ a {
 .navbar a:hover {
   color: #e62b4a;
 }
-
+.header .navbar-toggler {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 35px;
+  display: none;
+  /* dùng display none để nó mất đi luôn, còn opacity hoặc visibility : hidden nó chỉ ẩn đi thôi */
+}
 /* START CAROUSEL */
 .carousel {
   background-image: url(../image-video/home_slider.jpg);
@@ -87,7 +111,16 @@ a {
 .carousel__content button {
   padding: 15px 30px;
   color: #ffffff;
-  background-color: #e62b4a;
+  /* background-color: #e62b4a; */
+  /* màu trải (linear-gradient) chỉ dùng được với background-image, hoặc background thôi */
+  background-image: linear-gradient(
+    to right,
+    red,
+    green 50%,
+    blue,
+    white,
+    black
+  );
   border: none;
   font-size: 24px;
 }
@@ -171,6 +204,7 @@ a {
 /* NEWS */
 .news {
   padding: 80px 0;
+  animation-duration: 5s;
 }
 
 .news__title {
@@ -312,7 +346,7 @@ a {
 }
 
 /* Responsive max-width màn hình lớn đến màn hình bé*/
-@media screen and (max-width: 992px;) {
+/* @media screen and (max-width: 992px;) {
   .demo_before_after h2 {
     color: blue;
   }
@@ -328,4 +362,106 @@ a {
   .statistic__list {
     flex-direction: row;
   }
+} */
+/* Desktop */
+@media screen and (max-width: 1200px) {
 }
+/* Tablet */
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    display: none;
+  }
+  .header .navbar-toggler {
+    display: inline-block;
+  }
+  .carousel__content {
+    width: 80%;
+  }
+  .news__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .news__item-1 {
+    grid-column: initial;
+    grid-row: initial;
+  }
+  .news__item-10 {
+    grid-column: initial;
+    grid-row: initial;
+  }
+  .statistic__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .statistic .statistic__list {
+    flex-wrap: wrap;
+  }
+  .contact__content {
+    display: block;
+    height: auto;
+  }
+  .contact__map {
+    width: 100%;
+  }
+  .contact__form form {
+    padding: 0;
+  }
+}
+/* Responsive và adaptive (adaptive là viết 2 source, 1 source cho màn hình lớn, 1 source khác tương ứng với điện thoại,... */
+/* kích thước của phone (xoay dọc) */
+@media screen and (max-width: 576px) {
+  /* thì dùng css sau (ghi đè css đã viết cho screen lớn) */
+  /* Lưu ý: - toàn bộ câu điều kiện phải nằm ở dưới hết
+   - điểm ưu tiên của selector phải cao hơn, gọi nhiều cấp hơn so với css đã khai phía trên */
+  /* .header .logo {
+    color: purple;
+  } */
+  .header .navbar {
+    display: none;
+  }
+
+  .header .navbar-toggler {
+    display: inline-block;
+  }
+  .carousel__content p {
+    font-size: 25px;
+  }
+  .carousel__content h2 {
+    font-size: 35px;
+  }
+  .carousel__content {
+    width: 80%;
+  }
+
+  .carousel__content button {
+    font-size: 17px;
+  }
+  .news__list {
+    display: block;
+  }
+  .statistic__list {
+    display: block;
+  }
+  .statistic__item {
+    margin-bottom: 30px;
+  }
+  .contact__content {
+    display: block;
+    height: auto;
+  }
+  .contact__map {
+    width: 100%;
+  }
+  .contact__form form {
+    padding: 0;
+  }
+}
+/* Phone xoay ngang */
+/* min-width là từ mức nào đó trở lên, lấy luôn móc đó, 
+còn max-width là dưới mức đó */
+/* Để ko bị ghi đè code thì dùng, cách 1: */
+/* @media screen and (min-width: 576px) and (max-width: 768px) {
+} , nhưng sẽ ko dùng cách này*/
+/* Khi 2 màn hình có cách khai css giống nhau, thì nên ghi kích thước của màn hình lớn ở trên màn hình nhỏ để ko bị đè code css */
