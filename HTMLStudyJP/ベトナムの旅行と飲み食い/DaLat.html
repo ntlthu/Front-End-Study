@@ -35,11 +35,17 @@
         ラムヴィエン
         <a href="#" data-bs-toggle="tooltip" title="こうげん Cao nguyên">高原</a>
         にある
-        <a href="#" data-bs-toggle="tooltip" title="ひしょち Khu nghỉ mát, Chỗ nghỉ mát">避暑地</a>
+        <a href="#" data-bs-toggle="tooltip" title="ひしょち = Khu nghỉ mát, Chỗ nghỉ mát">
+            避暑地 &nbsp;
+            <i class="fa fa-volume-up control-audio"
+                src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B2%E3%81%97%E3%82%87%E3%81%A1&kanji=%E9%81%BF%E6%9A%91%E5%9C%B0"></i>
+        </a>
     </p>
 
 
     <!-- BS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- TOOLTIPS BS -->
@@ -47,6 +53,14 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </Script>
+
+    <script>
+        $(".control-audio").click(function () {
+            let src = $(this).attr("src");
+            const audio = new Audio(src);
+            audio.play();
+        });
+    </script>
 </body>
 
 </html>

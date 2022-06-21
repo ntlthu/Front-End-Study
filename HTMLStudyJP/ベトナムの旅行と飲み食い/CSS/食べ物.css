@@ -1,0 +1,25 @@
+html,
+body {
+  padding: 20px;
+}
+/* div {
+  margin-top: 25px;
+  padding: 20px;
+} */
+
+a {
+  text-decoration: none;
+}
+div h3 a,
+div h3 {
+  color: rgb(138, 3, 3);
+}
+
+p a {
+  color: black;
+}
+
+a::before{
+    content: "<i class="fa fa-volume-up control-audio"
+    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%82%E3%81%A4%E3%82%81%E3%82%8B&kanji=%E9%9B%86%E3%82%81%E3%82%8B"></i>";
+}
