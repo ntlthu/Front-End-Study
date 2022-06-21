@@ -34,6 +34,8 @@ li {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .btn-gradient {
@@ -46,12 +48,10 @@ li {
   color: #fff;
   cursor: pointer;
   display: block;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   transition: all 0.5s;
   background-size: 200%;
 }
@@ -185,12 +185,10 @@ h2.h2-common {
   color: #fff;
   border-radius: 3.5rem;
   font-weight: 900;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   margin-right: 10px;
 }
@@ -198,10 +196,12 @@ h2.h2-common {
 .carousel__img {
   width: 40%;
 }
+
 .carousel__banner {
   margin-left: 5rem;
   width: 57rem;
 }
+
 .carousel__img img {
   max-width: 100%;
   display: block;
@@ -334,12 +334,10 @@ h3.h3-common {
   display: inline-block;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   color: #fff;
 }
@@ -392,12 +390,10 @@ h3.h3-common {
 
 .features_bg::after {
   content: "";
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   position: absolute;
   top: 0;
@@ -590,11 +586,9 @@ h3.h3-common {
   top: 0;
   left: -100%;
   display: block;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0,
-    rgba(255, 255, 255, 0.3) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.3) 100%);
   transform: skewX(-25deg);
   transition: all 0.75s;
 }
@@ -683,6 +677,7 @@ h3.h3-common {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .testimonial__content {
   min-height: 300px;
 }
@@ -814,7 +809,7 @@ h3.h3-common {
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal,
-.testimonial .swiper-horizontal > .swiper-pagination-bullets {
+.testimonial .swiper-horizontal>.swiper-pagination-bullets {
   bottom: auto;
 }
 
@@ -862,9 +857,11 @@ h3.h3-common {
   text-align: center;
   padding-bottom: 50px;
 }
+
 .blog__item-img {
   position: relative;
 }
+
 .blog__item {
   text-align: left;
   background: rgba(245, 95, 141, 0.1);
@@ -877,12 +874,10 @@ h3.h3-common {
 }
 
 .blog__item-img p {
-  background-image: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
   border-radius: 0.6rem;
   padding: 1rem 2rem;
@@ -892,6 +887,7 @@ h3.h3-common {
   bottom: -2rem;
   left: 1.5rem;
 }
+
 .blog__item-detail {
   padding: 3rem 1.5rem 2rem 1.5rem;
   line-height: 1.4;
@@ -959,6 +955,7 @@ h3.h3-common {
   width: 100%;
   height: 100%;
 }
+
 .footer__form {
   display: flex;
   /* justify-content: space-around; */
@@ -978,12 +975,14 @@ h3.h3-common {
   color: #262626;
   width: 50%;
 }
+
 .footer__form form {
   width: 50%;
   display: flex;
   border-radius: 0.5rem;
   box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.1);
 }
+
 .footer__form form input {
   padding: 2rem 2rem;
   font-size: 1.5rem;
@@ -1005,12 +1004,10 @@ h3.h3-common {
 .footer__form form button {
   padding: 2rem 3.5rem;
   font-size: 2rem;
-  background-image: linear-gradient(
-    to right,
-    #f55f8d 0,
-    #f8ae56 51%,
-    #f55f8d 100%
-  );
+  background-image: linear-gradient(to right,
+      #f55f8d 0,
+      #f8ae56 51%,
+      #f55f8d 100%);
   background-size: 200%;
   border-color: transparent;
   transition: all 0.5s;
@@ -1049,6 +1046,7 @@ h3.h3-common {
   padding: 7rem 0;
   position: relative;
 }
+
 .footer__item {
   width: 25%;
 }
@@ -1070,12 +1068,10 @@ h3.h3-common {
   left: 0;
   height: 4px;
   border-radius: 20px;
-  background: linear-gradient(
-    to right,
-    var(--pink) 0,
-    var(--orange) 51%,
-    var(--pink) 100%
-  );
+  background: linear-gradient(to right,
+      var(--pink) 0,
+      var(--orange) 51%,
+      var(--pink) 100%);
   background-size: 200%;
 }
 
@@ -1093,6 +1089,7 @@ h3.h3-common {
   display: flex;
   align-items: center;
 }
+
 .footer__contact i {
   height: 4rem;
   width: 4rem;
@@ -1181,4 +1178,24 @@ h3.h3-common {
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
+}
+
+/* RESPONSIVE */
+.header .navbar-toggler {
+  background: transparent;
+  border: none;
+  color: var(--orange);
+  font-size: 35px;
+  display: none;
+}
+
+/* kích thước của phone (xoay dọc) */
+@media screen and (max-width: 576px) {
+  .header .navbar {
+    display: none;
+  }
+
+  .header .navbar-toggler {
+    display: inline-block;
+  }
 }
