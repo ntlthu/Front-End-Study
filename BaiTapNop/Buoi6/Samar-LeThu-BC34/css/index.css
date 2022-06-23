@@ -34,8 +34,6 @@ li {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
 }
 
 .btn-gradient {
@@ -65,34 +63,34 @@ li {
   font-size: 1.5rem;
   text-transform: capitalize;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
-.header .header__content {
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .header__content nav {
+.header__content nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .header__content nav a {
-  margin: 5.5rem 1.5rem;
-  /* padding: 5.5rem 1.5rem; */
-  /* dùng margin thay cho padding để tránh bug khi hover vào khoảng giữa 2 thẻ a cũng bị hiệu ứng đổi màu của text */
+.header__content nav a {
+  padding: 5.5rem 1.5rem;
   color: var(--heading-text);
   font-weight: 500;
 }
 
-.header .header__content nav a:hover {
+.header__content nav a:hover {
   color: var(--pink);
 }
 
-.header .header__content a span {
+.header__content a span {
   display: inline-block;
   transition: all 1s;
 }
@@ -116,13 +114,13 @@ li {
   }
 }
 
-.header .header__content nav a i {
+.header__content nav a i {
   font-size: 0.9rem;
   margin-top: -0.3rem;
   vertical-align: middle;
 }
 
-.header .header__content nav div {
+.header__content nav div {
   margin-left: 3rem;
 }
 
@@ -134,7 +132,7 @@ li {
   background-position: top;
   background-size: 100%;
   padding-top: 18rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .carousel .carousel__content {
@@ -1191,11 +1189,19 @@ h3.h3-common {
 
 /* kích thước của phone (xoay dọc) */
 @media screen and (max-width: 576px) {
-  .header .navbar {
+  .header .header__content .navbar {
     display: none;
   }
 
   .header .navbar-toggler {
     display: inline-block;
+  }
+
+  .header .container .header__content {
+    padding: 2rem;
+  }
+
+  #carousel {
+    background-size: cover;
   }
 }
