@@ -69,3 +69,38 @@
   background-color: #35a22c;
   color: white !important;
 }
+
+.portfolio .main .item {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.portfolio .main .item .info {
+  border: 1px solid transparent;
+  transition: all 0.4s;
+  /* thêm 2 thuộc tính dưới để khi hover vào thấy cả đường viền của 2 góc */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.portfolio .main .item:hover .info {
+  border-color: #35a22c;
+  border-top-color: transparent;
+}
+
+.portfolio .main .item:hover .info h1 {
+  color: #35a22c;
+}
+
+/* Reponsive */
+/* desktop lg */
+@media screen and (max-width: 1200px) {
+}
+/* máy tính bảng md */
+@media screen and (max-width: 992px) {
+}
+/* phone ngang sm */
+@media screen and (max-width: 768px) {
+}
+/* phone dọc xs */
+@media screen and (max-width: 576px) {
+}

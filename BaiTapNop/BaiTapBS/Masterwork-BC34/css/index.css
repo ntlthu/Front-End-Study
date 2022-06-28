@@ -39,6 +39,20 @@ body {
 .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
+.h6-common {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--pink);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.h3-common {
+  color: var(--title-color);
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 700;
+}
 /* HEADER CSS */
 .header {
   background-color: #fff;
@@ -47,6 +61,7 @@ body {
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease 0s;
 }
 .container {
   width: 100%;
@@ -64,6 +79,10 @@ body {
   color: var(--pink);
   letter-spacing: -1px;
 }
+.navbar .navbar-brand:hover {
+  opacity: 0.95;
+}
+
 .navbar .navbar-brand i {
   display: inline-block;
   color: var(--pink);
@@ -121,6 +140,22 @@ a.dropdown-item:hover::before {
 }
 
 /* OUR IDEAS */
+.OurIdeas {
+  margin-top: 90px;
+}
+.OurIdeas .OurIdeas__content {
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+    url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+}
 
 .OurIdeas__content .content-photo img {
   transform: rotate(180deg);
@@ -130,7 +165,7 @@ a.dropdown-item:hover::before {
   font-size: 50px;
   line-height: 57.5px;
   color: var(--title-color);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .OurIdeas__content .content-left p {
@@ -139,6 +174,43 @@ a.dropdown-item:hover::before {
   line-height: 28px;
   font-weight: 400;
   max-width: 450px;
+}
+
+/* WE ARE TRUE */
+.Wearetrue .Wearetrue__content {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.33)
+    ),
+    url(../images/bg.jpg);
+  background-size: cover;
+  min-height: 480px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 32px 0;
+  display: grid;
+  align-items: center;
+}
+.Wearetrue__detail-h2 h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.Wearetrue__detail-p p {
+  font-size: 16px;
+  color: #eee;
+  line-height: 24.5px;
+}
+.Wearetrue__detail {
+  max-width: 550px;
+}
+.btn-light:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
 }
 /* RESPONSIVE */
 /* @media screen and (min-width: 576px) {
