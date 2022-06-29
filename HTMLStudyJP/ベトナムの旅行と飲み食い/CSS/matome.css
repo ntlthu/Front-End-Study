@@ -1,0 +1,96 @@
+button {
+  margin: 5px;
+}
+nav {
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+p {
+  line-height: 30px;
+}
+.tab-pane .mystyle {
+  margin-right: 40px;
+  text-shadow: 5px 5px 20px green;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.tab-pane .mystyle > a {
+  color: black !important;
+}
+.tabemono-item h3 a {
+  color: rgb(138, 3, 3);
+}
+.tabemono-item a {
+  color: black;
+}
+
+div h3 a,
+h3 {
+  color: rgb(138, 3, 3);
+}
+
+p a {
+  color: black;
+}
+
+p {
+  line-height: 30px;
+}
+
+h1 {
+  color: green;
+  /* text-shadow: 5px 5px 10px gray; */
+}
+
+h1 a {
+  color: green;
+}
+
+.kotoba-item h3 {
+  margin-bottom: 15px;
+}
+
+.kotoba-item a {
+  color: black;
+  font-weight: bold;
+}
+
+.kotoba-item h3 a {
+  color: rgb(138, 3, 3);
+}
+
+.kotoba-item div a {
+  /* border: 1px solid green; */
+  /* border-radius: 5px; */
+  text-decoration: none;
+  /* padding: 5px;
+  background: rgb(171, 248, 171); */
+  margin-right: 10px;
+}
+
+.kotoba-item .mystyle {
+  margin-right: 40px;
+  text-shadow: 5px 5px 20px green;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
+#tonghoplinhtinh a {
+  color: black;
+  text-decoration: none;
+}

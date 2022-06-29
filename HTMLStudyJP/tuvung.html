@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Từ Vựng</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./ベトナムの旅行と飲み食い/CSS/matome.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="./ベトナムの旅行と飲み食い/matome.html">まとめ</a>
+      <a href="./nguphap.html">文法</a>
+    </nav>
+    <div class="d-flex align-items-start">
+      <div
+        class="nav flex-column nav-pills me-3"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          class="nav-link active"
+          data-bs-toggle="pill"
+          data-bs-target="#nichijyou"
+        >
+          日常日本語
+        </button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="nichijyou">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            data-bs-custom-class="custom-popover"
+            title="みぎかたあがり: NGÀY CÀNG TĂNG/ đang trên đà phát triển/ đang khởi sắc"
+            data-bs-content="売り上げが右肩上がりだ。（うりあげ が みぎかたあがり だ）= Doanh số ngày càng tăng. Đây là từ dùng để biểu thị hiệu suất kinh doanh ngày càng đi lên giống dạng đồ thị hướng lên"
+          >
+            右肩上がり
+            <i
+              class="fa fa-volume-up control-audio"
+              src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%81%8E%E3%81%8B%E3%81%9F%E3%81%82%E3%81%8C%E3%82%8A&kanji=%E5%8F%B3%E8%82%A9%E4%B8%8A%E3%81%8C%E3%82%8A"
+            ></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            data-bs-custom-class="custom-popover"
+            title="みぎかたさがり: XUỐNG DỐC / SUY THOÁI"
+            data-bs-content=""
+          >
+            右肩下がり
+            <i
+              class="fa fa-volume-up control-audio"
+              src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%81%8E%E3%81%8B%E3%81%9F%E3%81%95%E3%81%8C%E3%82%8A&kanji=%E5%8F%B3%E8%82%A9%E4%B8%8B%E3%81%8C%E3%82%8A"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
+</html>

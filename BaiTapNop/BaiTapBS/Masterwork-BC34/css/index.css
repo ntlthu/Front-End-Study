@@ -1,0 +1,257 @@
+/* GLOBAL CSS */
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+:root {
+  --pink: #dc4f72;
+  --secondary: #0d5fa8;
+  --title-color: #2c3038;
+  --text-color: #5a5a5a;
+}
+
+.theme-button {
+  transition: 0.3s ease-out;
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
+  text-transform: uppercase;
+}
+.btn-outline-primary {
+  color: #dc4f72;
+  border-color: #dc4f72;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+}
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
+}
+.h6-common {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--pink);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.h3-common {
+  color: var(--title-color);
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 700;
+}
+/* HEADER CSS */
+.header {
+  background-color: #fff;
+  padding: 0px;
+  height: 90px;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease 0s;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.navbar .navbar-brand {
+  font-size: 27px;
+  font-weight: 800;
+  color: var(--pink);
+  letter-spacing: -1px;
+}
+.navbar .navbar-brand:hover {
+  opacity: 0.95;
+}
+
+.navbar .navbar-brand i {
+  display: inline-block;
+  color: var(--pink);
+  font-size: 27px;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.navbar-nav .nav-item .nav-link {
+  color: var(--title-color);
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--pink);
+}
+.dropdown-menu .dropdown-item {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--title-color);
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 14px;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: var(--pink);
+}
+a.nav-link::before {
+  position: absolute;
+  content: "";
+  background: var(--pink);
+  width: 0px;
+  height: 2px;
+  bottom: 8px;
+  transition: all 0.5s ease;
+}
+.dropdown-menu .dropdown-item::before {
+  position: absolute;
+  content: "";
+  background: var(--pink);
+  width: 0px;
+  height: 2px;
+  bottom: 13px;
+  transition: all 0.5s ease;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::before,
+a.dropdown-item:hover::before {
+  width: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link.active {
+  color: var(--pink);
+}
+
+/* OUR IDEAS */
+.OurIdeas {
+  margin-top: 90px;
+}
+.OurIdeas .OurIdeas__content {
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+    url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+}
+
+.OurIdeas__content .content-photo img {
+  transform: rotate(180deg);
+}
+
+.OurIdeas__content .content-left h3 {
+  font-size: 50px;
+  line-height: 57.5px;
+  color: var(--title-color);
+  font-weight: 800;
+}
+
+.OurIdeas__content .content-left p {
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+/* WE ARE TRUE */
+.Wearetrue .Wearetrue__content {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.33)
+    ),
+    url(../images/bg.jpg);
+  background-size: cover;
+  min-height: 480px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 32px 0;
+  display: grid;
+  align-items: center;
+}
+.Wearetrue__detail-h2 h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.Wearetrue__detail-p p {
+  font-size: 16px;
+  color: #eee;
+  line-height: 24.5px;
+}
+.Wearetrue__detail {
+  max-width: 550px;
+}
+.btn-light:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+/* RESPONSIVE */
+/* @media screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and ((min-width: 1200px)) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+} */

@@ -34,6 +34,7 @@ li {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .btn-gradient {
@@ -45,11 +46,13 @@ li {
   border-radius: 30px;
   color: #fff;
   cursor: pointer;
-  display: block;
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   transition: all 0.5s;
   background-size: 200%;
 }
@@ -183,10 +186,12 @@ h2.h2-common {
   color: #fff;
   border-radius: 3.5rem;
   font-weight: 900;
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   margin-right: 10px;
 }
@@ -202,7 +207,7 @@ h2.h2-common {
 
 .carousel__img img {
   max-width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 /* SERVICE CSS */
@@ -332,10 +337,12 @@ h3.h3-common {
   display: inline-block;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   color: #fff;
 }
@@ -388,10 +395,12 @@ h3.h3-common {
 
 .features_bg::after {
   content: "";
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   position: absolute;
   top: 0;
@@ -584,9 +593,11 @@ h3.h3-common {
   top: 0;
   left: -100%;
   display: block;
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 0) 0,
-      rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   transform: skewX(-25deg);
   transition: all 0.75s;
 }
@@ -807,7 +818,7 @@ h3.h3-common {
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal,
-.testimonial .swiper-horizontal>.swiper-pagination-bullets {
+.testimonial .swiper-horizontal > .swiper-pagination-bullets {
   bottom: auto;
 }
 
@@ -872,10 +883,12 @@ h3.h3-common {
 }
 
 .blog__item-img p {
-  background-image: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
   border-radius: 0.6rem;
   padding: 1rem 2rem;
@@ -1002,10 +1015,12 @@ h3.h3-common {
 .footer__form form button {
   padding: 2rem 3.5rem;
   font-size: 2rem;
-  background-image: linear-gradient(to right,
-      #f55f8d 0,
-      #f8ae56 51%,
-      #f55f8d 100%);
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
   background-size: 200%;
   border-color: transparent;
   transition: all 0.5s;
@@ -1066,10 +1081,12 @@ h3.h3-common {
   left: 0;
   height: 4px;
   border-radius: 20px;
-  background: linear-gradient(to right,
-      var(--pink) 0,
-      var(--orange) 51%,
-      var(--pink) 100%);
+  background: linear-gradient(
+    to right,
+    var(--pink) 0,
+    var(--orange) 51%,
+    var(--pink) 100%
+  );
   background-size: 200%;
 }
 
@@ -1170,6 +1187,7 @@ h3.h3-common {
   opacity: 0;
   transition: all 0.2s;
   box-shadow: -4px 4px 24px -10px #f55f8d;
+  z-index: 99999;
 }
 
 /* thuộc tính bên dưới là copy của thư viện back to top */
@@ -1187,6 +1205,157 @@ h3.h3-common {
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .carousel__img .carousel__banner {
+    width: 100%;
+    margin-left: 0;
+  }
+  .features .features__right {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .footer .footer__item {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header__content nav div {
+    margin-left: 0.5rem;
+  }
+  .header__content nav a {
+    padding: 5.5rem 0.5rem;
+  }
+
+  .carousel .carousel__content {
+    flex-direction: column;
+  }
+  .carousel .carousel__content .h4-common,
+  .carousel .carousel__content .h2-common {
+    text-align: center;
+  }
+  .carousel__content .carousel__detail,
+  .carousel__content .carousel__img {
+    width: 100%;
+  }
+  .carousel__content .carousel__detail {
+    text-align: left;
+  }
+  .carousel__img .carousel__banner {
+    width: 100%;
+    /* margin-left: 5rem; */
+  }
+
+  .service .service__detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutUs .aboutUs__content {
+    flex-direction: column;
+  }
+  .aboutUs__detail {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .aboutUs__detail .h4-common,
+  .aboutUs__detail .h2-common {
+    text-align: center;
+  }
+  .aboutUs__detail ul {
+    text-align: left;
+  }
+  .aboutUs__img {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .features .features__content {
+    flex-direction: column;
+  }
+  .features__content .features__left {
+    width: 100%;
+  }
+  .features__content .features__right {
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+  .features__tilte .h4-common,
+  .features__tilte .h2-common {
+    text-align: center;
+  }
+  .plan__item {
+    padding: 3.5rem 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header__content .navbar {
+    display: none;
+  }
+
+  .header .navbar-toggler {
+    display: inline-block;
+  }
+  .carousel .carousel__content {
+    flex-direction: column;
+  }
+  .carousel__content .carousel__detail,
+  .carousel__content .carousel__img {
+    width: 100%;
+  }
+  .carousel__content .carousel__detail {
+    text-align: center;
+  }
+  .carousel__img .carousel__banner {
+    width: 100%;
+    margin-left: 5rem;
+  }
+  .service .service__detail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutUs .aboutUs__content {
+    flex-direction: column;
+  }
+  .aboutUs__detail {
+    width: 100%;
+  }
+  .aboutUs__detail ul {
+    text-align: left;
+  }
+  .aboutUs__img {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .countUp__content .countUp__item {
+    width: 50%;
+  }
+  .countUp .countUp__content {
+    flex-wrap: wrap;
+  }
+  .features .features__content {
+    flex-direction: column;
+  }
+  .features__content .features__left {
+    width: 100%;
+  }
+  .features__content .features__right {
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+  .plan .plan__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__content .footer__item {
+    width: 50%;
+  }
+  .footer .footer__content {
+    flex-wrap: wrap;
+  }
+}
 /* kích thước của phone (xoay dọc) */
 @media screen and (max-width: 576px) {
   .header .header__content .navbar {
@@ -1197,11 +1366,69 @@ h3.h3-common {
     display: inline-block;
   }
 
-  .header .container .header__content {
-    padding: 2rem;
+  .carousel .carousel__content {
+    flex-direction: column;
   }
-
-  #carousel {
-    background-size: cover;
+  .carousel__content .carousel__detail,
+  .carousel__content .carousel__img {
+    width: 100%;
+  }
+  .carousel__content .carousel__detail {
+    text-align: center;
+  }
+  .carousel__img .carousel__banner {
+    width: 100%;
+    margin-left: 0;
+  }
+  .service .service__detail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutUs .aboutUs__content {
+    flex-direction: column;
+  }
+  .aboutUs__detail {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutUs__detail ul {
+    text-align: left;
+  }
+  .aboutUs__img {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .countUp .countUp__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features .features__content {
+    flex-direction: column;
+  }
+  .features__content .features__left {
+    width: 100%;
+  }
+  .features__content .features__right {
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+  .plan .plan__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer .footer__form {
+    flex-direction: column;
+  }
+  .footer__form h2,
+  .footer__form form {
+    width: 100%;
+  }
+  .footer .footer__content {
+    flex-direction: column;
+  }
+  .footer__content .footer__item {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 23%;
   }
 }
