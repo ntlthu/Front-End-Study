@@ -1,71 +1,128 @@
 <!-- gõ tắt bs5 để tạo file html có bs5 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>JS-Buoi2</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body class="container">
-    <div class="container" style="margin-bottom: 50px">
-      <div id="content">Hello cybersoft</div>
-    </div>
-    <br />
-    <input id="text" class="form-control w-25" value="123" />
-    <img id="imageB4" src="./img/b4.jpg" alt="b4" class="w-25" />
-    <button class="btn btn-success" onclick="thayDoiNoiDung()">
-      Thay đổi nội dung
-    </button>
-    <hr />
-    <h3>
-      Bài tập 1: Viết chương trình khi người dùng click vào nút
-      button#btnThayDoi thì nội dung thẻ p sẽ thay đổi
-    </h3>
-    <h3>Học lập trình tại cybersoft</h3>
-    <p id="noiDung">Nội dung trước khi thay đổi</p>
-    <button class="btn btn-secondary" onclick="changeContentOfP()">
-      Nhấn em đi
-    </button>
-    <hr />
-    <h3>Bài Tập 2: Thay đổi màu sắc của ngôi nhà</h3>
-    <i id="home" class="fa fa-home" style="font-size: 200px"></i>
-    <div class="form-group">
-      <p>Chọn màu sắc</p>
-      <select name="" id="color" class="form-control w-25 mb-5">
-        <option value="red">Red</option>
-        <option value="Blue">Blue</option>
-        <option value="Green">Green</option>
-      </select>
-      <button
-        id="btnChangeColor"
-        class="btn btn-primary"
-        onclick="changeColor()"
-      >
-        Change color
-      </button>
-    </div>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+<head>
+  <title>JS-Buoi2</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
-    <script src="./Buoi2JS.js"></script>
-  </body>
+<body class="container">
+  <div class="container" style="margin-bottom: 50px">
+    <div id="content">Hello cybersoft</div>
+  </div>
+  <br />
+  <input id="text" class="form-control w-25" value="123" />
+  <img id="imageB4" src="./img/b4.jpg" alt="b4" class="w-25" />
+  <button class="btn btn-success" onclick="thayDoiNoiDung()">
+    Thay đổi nội dung
+  </button>
+  <hr />
+  <h3>
+    Bài tập 1: Viết chương trình khi người dùng click vào nút
+    button#btnThayDoi thì nội dung thẻ p sẽ thay đổi
+  </h3>
+  <h3>Học lập trình tại cybersoft</h3>
+  <p id="noiDung">Nội dung trước khi thay đổi</p>
+  <button class="btn btn-secondary" onclick="changeContentOfP()">
+    Nhấn em đi
+  </button>
+  <hr />
+  <h3>Bài Tập 2: Thay đổi màu sắc của ngôi nhà</h3>
+  <i id="home" class="fa fa-home" style="font-size: 200px"></i>
+  <div class="form-group">
+    <p>Chọn màu sắc</p>
+    <select name="" id="color" class="form-control w-25 mb-5">
+      <option value="red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select>
+    <button id="btnChangeColor" class="btn btn-primary" onclick="changeColor()">
+      Change color
+    </button>
+  </div>
+  <hr>
+  <h3>Bài Tập 3: Xây dựng ứng dụng khi người dùng bấm vào nút bật đèn thì hiển thị đèn sáng và ngược lại</h3>
+  <button id="btnBatDen" onclick="batDen()">Bật đèn</button>
+  <img id="lightBulb" src="./img/BAT_TAT_DEN/pic_bulboff.gif" alt="">
+  <button id="btnTatDen" onclick="tatDen()">Tắt Đèn</button>
+  <hr>
+  <h3>Bài tập 4: Xây dựng ứng dụng để disable xử lý của 1 button</h3>
+  <input type="" id="txt" class="form-control w-25">
+  <button id="btn">Button</button>
+  <br>
+  <button id="btnClick">disable</button>
+  <hr>
+  <h3>Bài tập 5: Xây dựng form đăng nhập hiển thị thông tin người dùng nhập vào, và thay đổi màu nền div#thongBao</h3>
+  <div class="d-flex justify-content-center">
+    <div class="card w-50">
+      <div class="card-header bg-dark text-white text-center">Đăng nhập</div>
+      <div class="card-body">
+        <div class="form-group">
+          <p>Tài khoản</p>
+          <input type="" class="form-control" id="taiKhoan">
+        </div>
+        <div class="form-group">
+          <p>Mật khẩu</p>
+          <input type="password" class="form-control" id="matKhau">
+        </div>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary" id="btnDangNhap">Đăng nhập</button>
+        <div class="mt-2" id="thongBao">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-success" onclick="taoTheP()">Tạo thẻ P</button>
+  <div id="myDiv"></div>
+
+  <!-- Project 1: tính tiền tip -->
+  <div class="d-flex justify-content-center">
+    <div class="card w-50">
+      <div class="card-header bg-dark text-white text-center">Tính tiền tip</div>
+      <div class="card-body">
+        <div class="form-group">
+          <p>Tổng tiền thanh toán</p>
+          <input type="" class="form-control" id="tienThanhToan">
+        </div>
+        <div class="form-group">
+          <p>Bạn muốn tip bao nhiêu?</p>
+          <select class="form-control" id="slTip">
+            <option value="30">30%</option>
+            <option value="20">20%</option>
+            <option value="15">15%</option>
+            <option value="10">10%</option>
+            <option value="5">5%</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Muốn share bao nhiêu người</p>
+          <input class="form-control" type="number" id="share">
+        </div>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary" id="btnTinhNao">TÍNH NÀO</button>
+        <div class="mt-2" id="thongBaoTienTip">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+  <script src="./Buoi2JS.js"></script>
+</body>
+
 </html>
