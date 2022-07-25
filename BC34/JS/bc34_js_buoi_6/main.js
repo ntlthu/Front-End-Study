@@ -1,6 +1,6 @@
 /**
  * Vòng lặp
- * while
+ * while: là vòng lặp vô tận, ko biết chính xác số lần lặp, vậy nên quan trọng là bước nhảy để vòng lặp dừng lại
  * do while
  * for
  */
@@ -14,6 +14,7 @@ while (n < 3) {
 }
 
 /**
+ * Chạy bằng tay
  * . n = 0; n < 3 => "Hello Cybersoft"; n = 1
  * . n = 1; n < 3 => "Hello Cybersoft"; n = 2
  * . n = 2; n < 3 => "Hello Cybersoft"; n = 3
@@ -25,10 +26,12 @@ while (n < 3) {
  */
 document.getElementById("btnSubmit").onclick = function () {
   var number = document.getElementById("number").value;
+  // đặt biến var number xem như là
   var content = "";
 
   while (number > 1) {
     number = Math.floor(number / 2);
+    // lấy lại tên biến number đặt lại cho biểu thức trên để xem number là bước nhảy, chặn vòng lặp khi điều kiện trở thành false
     content += "<p>Number: " + number + "</p>";
   }
 
