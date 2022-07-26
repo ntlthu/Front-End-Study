@@ -104,3 +104,66 @@ document.getElementById("btnSubmit3").onclick = function () {
   console.log(soChan);
   console.log(soLe);
 };
+
+function demoVongLapLong() {
+  var content = "";
+
+  for (var i = 0; i < 5; i++) {
+    for (var j = 0; j < 5; j++) {
+      content += "*  ";
+    }
+    content += "\n";
+    // \n để giúp xuống dòng
+  }
+  console.log(content);
+}
+demoVongLapLong();
+
+/**
+ * .i = 0; i <5
+ *      .j = 0; j < 5 =>
+ */
+
+//Break
+function demoBreak() {
+  for (var i = 0; i < 10; i++) {
+    console.log(i);
+    if (i === 3) {
+      console.log("Tim thay so 3");
+      break;
+    }
+  }
+}
+demoBreak();
+
+//continue
+function demoContinue() {
+  for (var i = 0; i < 10; i++) {
+    if (i === 3) {
+      continue;
+    }
+    console.log(i);
+  }
+}
+demoContinue();
+
+//lenh return
+function demoReturn() {
+  console.log("Hello Thu Thu");
+  return;
+  //đặt return ở đây thì nghĩa là function demo này kết thúc tại chữ return
+  console.log("Hello cyber");
+}
+demoReturn();
+
+function demoReture2() {
+  if (2 === 3) {
+    console.log("Hello Thu Thu");
+    return;
+  }
+  // else {
+  //   console.log("hello Sato");
+  // }
+  console.log("hello Sato");
+}
+demoReture2();
