@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IF~ELSE JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Ví dụ 1: Chuyển số âm sang số dương</h4>
+      <input id="number1" type="number" />
+      <button id="chuyendoiSo" class="btn btn-success">Chuyển đổi</button>
+      <div id="thongBaoSo"></div>
+      <hr />
+      <div>
+        <h4>
+          Viết chương trình nhập vào 1 số và thông báo số đó là số chẵn hay số
+          lẽ
+        </h4>
+        <input
+          type="number"
+          id="getNumber"
+          placeholder="nhập vào 1 số bất kỳ"
+        />
+        <button id="baoKetQua" class="btn btn-success">
+          Thông báo kết quả
+        </button>
+        <p id="showKetQua"></p>
+      </div>
+      <div>
+        <h4>
+          Nhập điểm trung bình. Nếu lớn hơn hoặc =5 thì in ra là đậu ngược lại
+          bé hơn 5 thì in ra rớt
+        </h4>
+        <input type="number" id="getDiemTrungBinh" placeholder="Nhập điểm" />
+        <button id="xepLoai" class="btn btn-warning">Xếp loại</button>
+        <p id="showXepLoai"></p>
+      </div>
+      <div>
+        <h4>Nhập vào 2 số, tìm số lớn nhất và in ra kết quả</h4>
+        <input type="number" id="nhapN1" placeholder="Nhập số thứ 1" />
+        <input type="number" id="nhapN2" placeholder="Nhập số thứ 2" />
+        <button id="maxNumber" class="btn btn-info">Tìm số lớn nhất</button>
+        <p id="printMaxNum"></p>
+      </div>
+      <div>
+        <h4>Tính lương</h4>
+        <input id="workHour" type="number" placeholder="Số giờ làm" />
+        <input type="number" id="luongGio" placeholder="Lương 1 giờ" />
+        <button id="salary" class="btn btn-info">Tính lương</button>
+        <p id="thongBaoLuong"></p>
+      </div>
+      <div>
+        <h4>Viết chương trình nhập vào điểm Toán, Lý, Hóa, in ra xếp loại</h4>
+        <input type="number" id="diemToan" placeholder="Điểm Toán?" />
+        <input type="number" id="diemLy" placeholder="Điểm Lý" />
+        <input type="number" id="diemHoa" placeholder="Điểm Hóa" />
+        <button id="ToanLyHoa" type="button" class="btn btn-outline-primary">
+          Xếp Loại
+        </button>
+        <p id="inXepLoai"></p>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./if.js"></script>
+  </body>
+</html>
