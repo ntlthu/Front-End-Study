@@ -24,6 +24,7 @@ var tongTien = 0;
  */
 function loaiXe() {
   var loaiXe = "";
+  // vì type của radio, chứ ko phải type text nên ko .value phía sau
   var grabX = document.getElementById("grabX");
   var grabSUV = document.getElementById("grabSUV");
   var grabBlack = document.getElementById("grabBlack");
@@ -85,6 +86,7 @@ document.getElementById("btnTinhTien").onclick = function () {
   }
 
   document.getElementById("xuatTien").innerHTML = tongTien;
+  // vì thẻ div bao bên ngoài thẻ span đang bị ẩn, nên cho nó display block để nó hiển thị lên
   document.getElementById("divThanhTien").style.display = "block";
 };
 

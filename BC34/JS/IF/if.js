@@ -87,3 +87,33 @@ document.getElementById("ToanLyHoa").onclick = function () {
   }
   document.getElementById("inXepLoai").innerHTML = "Xếp loại: " + xepLoaiHocLuc;
 };
+
+// Xây dựng chức năng zoom in, zoom out
+document.getElementById("btnZoomInHome").onclick = function () {
+  var fontSize = document.getElementById("home").style.fontSize;
+  //hàm để cắt số ra khỏi chữ px của fontSize: dùng hàm replace, là hàm để thay đổi 1 ký tự thành cái gì đó. Chuỗi đầu là giá trị cần thay đổi, chuỗi 2 là giá trị muốnt thay đổi thành
+  var fSize = Number(fontSize.replace("px", ""));
+  //Ví dụ muốn tăng fontSize lên 5px thì:
+
+  fSize += 5; // Cách ghi khác: fSize = fSize + 1
+  // Xuất info.
+  document.getElementById("home").style.fontSize = fSize + "px";
+};
+
+document.getElementById("btnZoomOutHome").onclick = function () {
+  var fontSize = document.getElementById("home").style.fontSize;
+  var fSize = Number(fontSize.replace("px", ""));
+  fSize -= 5;
+  document.getElementById("home").style.fontSize = fSize + "px";
+};
+
+document.getElementById("btnZoomInP").onclick = function () {
+  var tagP = domID("txtContent");
+  var fontSize = Number(tagP.style.fontSize.replace("px", ""));
+  tagP.style.fontSize = fontSize + 1 + "px";
+};
+
+//Viết hàm trả về 1 thẻ sau khi dom
+function domID(id) {
+  return document.getElementById(id); // id trong dấu ngoặc là id tham số nên ko có dấu "", nằm trong dấu nháy là chữ id cụ thể rồi
+}
